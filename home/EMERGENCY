@@ -1,0 +1,5 @@
+#source ./EMERGENCY or ./EMERGENCY -- fist form if file is not executable second form if it is
+termux-clipboard-set +923417080331
+#am start -a android.intent.action.DIAL -n com.samsung.android.dialer/com.samsung.android.dialer.DialtactsActivity
+#elixir -e 'System.shell "am start -n com.google.android.dialer/com.google.android.dialer.extensions.GoogleDialtactsActivity -a android.intent.action.DIAL -d 1234"'
+am start -n com.google.android.dialer/com.google.android.dialer.extensions.GoogleDialtactsActivity -a android.intent.action.DIAL -d 1234

@@ -1,0 +1,1 @@
+am start -a \"android.intent.action.VIEW\" -n \"org.mozilla.firefox/org.mozilla.fenix.IntentReceiverActivity\" --activity-clear-task --es \"com.android.browser.application_id\" \"org.mozilla.firefox\" -d 

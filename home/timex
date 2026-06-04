@@ -1,0 +1,1 @@
+exec env a=`date +%H` b=`date +%M` c=`date +%s` d=`date +%N` lua -e 'print (string.format("%x_%x_%x_%x",os.getenv("a"),os.getenv("b"),os.getenv("c"),os.getenv("d")));--os.execute("pstree -ap");'&;&
