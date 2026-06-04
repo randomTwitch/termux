@@ -1,0 +1,94 @@
+#!/data/data/com.termux/files/usr/bin/tcsh
+#New twitch account what to do: Create a new nthTwitchColor.ascii file, create a new grep if's for n-1TwitchColor.ascii file if all grep if's are passed write $1 && copy buffer to that new n+1 file
+#
+
+if ( $* == "" ) exit 1;
+
+renice +20 $$;
+echo '<'$$'>';
+
+set mgs_exit="/data/data/com.termux/files/home/storage/downloads/mgs_exit.m4a"; set mgs_pass="/data/data/com.termux/files/home/storage/downloads/mgs_pass.m4a"; set mgs_error="/data/data/com.termux/files/home/storage/downloads/mgs_error.m4a";
+(play-audio $mgs_pass;&)&;
+set p0="/data/data/com.termux/files/usr/tmp/erl_tmp"; set p1="/data/data/com.termux/files/home/1stTwitchRed.ascii"; set p2="/data/data/com.termux/files/home/2ndTwitchViolet.ascii"; set p3="/data/data/com.termux/files/home/3rdTwitchLblue.ascii"; set p4="/data/data/com.termux/files/home/4thTwitchWhite.ascii";
+
+set c=`termux-clipboard-get`;
+
+set e=`echo $1 | sed -e 1,2s/.home// | sed -e 1,2s/https...m.twitch.tv.// | sed -e 1,2s/http...m.twitch.tv.//`;
+set ee=`echo $c | sed -e 1,2s/.home// | sed -e 1,2s/https...m.twitch.tv.// | sed -e 1,2s/http...m.twitch.tv.//`;
+
+if ( $e == $ee ) then;
+	grep /$e/ $p1 >& /dev/null; set s=$status;
+	if ( $s == 0 ) then;
+		(termux-toast "$e found in 1stTwitchRed.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+	endif
+
+	grep /$e/ $p2 >& /dev/null;set s=$status;
+	if ( $s == 0 ) then;
+		(termux-toast "$e found in 2ndTwitchViolet.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+	endif
+
+	grep /$e/ $p3 >& /dev/null; set s=$status;
+	if ( $s == 0 ) then;
+		(termux-toast "$e found in 3rdTwitchLblue.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+	endif
+
+	grep /$e/ $p4 >& /dev/null; set s=$status;
+	if ( $s == 0 ) then;
+		(termux-toast "$e found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+	endif
+else
+	grep /$e/ $p1 >& /dev/null; set s=$status;
+	if ( $s == 0 ) then;
+		(termux-toast "$e found in 1stTwitchRed.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+	endif
+
+	grep /$ee/ $p1 >& /dev/null; set s=$status;
+	if ( $s == 0 ) then;
+		(termux-toast "$ee found in 1stTwitchRed.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+	endif
+
+	grep /$e/ $p2 >& /dev/null;set s=$status;
+	if ( $s == 0 ) then;
+		(termux-toast "$e found in 2ndTwitchViolet.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+	endif
+
+	grep /$ee/ $p2 >& /dev/null; set s=$status;
+	if ( $s == 0 ) then;
+		(termux-toast "$ee found in 2ndTwitchViolet.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+	endif
+
+	grep /$e/ $p3 >& /dev/null; set s=$status;
+	if ( $s == 0 ) then;
+		(termux-toast "$e found in 3rdTwitchLblue.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+	endif
+
+	grep /$ee/ $p3 >& /dev/null;  set s=$status;
+	if ( $s == 0 ) then;
+		(termux-toast "$ee found in 3rdTwitchLblue.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+	endif
+
+	grep /$e/ $p4 >& /dev/null; set s=$status;
+	if ( $s == 0 ) then;
+		(termux-toast "$e found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+	endif
+
+	grep /$ee/ $p4 >& /dev/null; set s=$status;
+	if ( $s == 0 ) then;
+		(termux-toast "$e found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+	endif
+endif
+
+if ( $e == $ee ) then;
+	echo $1 >> $p4;
+	(echo -n "$1#" >>& $p0;&);&;
+else if ( $e != $ee ) then;
+	echo $1 >> $p4;
+	echo $c >> $p4;
+	(echo -n "$1#" >>& $p0;&);&;
+	(echo -n "$c#" >>& $p0);
+endif
+
+wait;
+#(am start -n com.chrome.dev/com.google.android.apps.chrome.Main > /dev/null);&
+(play-audio $mgs_exit;&)&; unset s c e ee s y p0 p1 p2 p3 p4 mgs_error mgs_exit mgs_pass; exit 0;
+#(am start -n mark.via.gp/mark.via.Shell;&);&; exit 0;

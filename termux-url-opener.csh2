@@ -1,0 +1,5 @@
+#!/data/data/com.termux/files/usr/bin/tcsh
+#this script is for Elixir cmd "elixir ../usr/local/Elixir/[...]project/[...]"
+(echo "$1#" >> /data/data/com.termux/files/usr/tmp/erl_tmp;&);&
+(tcsh -bcdft 'am start -n mark.via.gp/mark.via.Shell';&);&
+#exit 0;

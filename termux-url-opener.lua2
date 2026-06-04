@@ -1,0 +1,5 @@
+#!/data/data/com.termux/files/usr/bin/lua
+luaTfile=io.open('../usr/tmp/lua_azkw22',"a+");
+luaTfile:write(string.format(arg[1]..'#')):flush();
+luaTfile:close();
+os.execute("exec tcsh -bcdftvxV '(am start -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -p com.android.chrome;&)';");

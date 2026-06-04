@@ -1,0 +1,49 @@
+#!/data/data/com.termux/files/usr/bin/tcsh
+#this script is for Elixir cmd "elixir ../usr/local/Elixir/[...]project/[...] AND source ~/termux-url-opener"
+#New twitch account what to do: Create a new nthTwitchColor.ascii file, create a new grep if's for n-1TwitchColor.ascii file if all grep if's are passed write $1 && copy buffer to that new n+1 file
+renice +20 $$;
+set p0="/data/data/com.termux/files/usr/tmp/erl_tmp"; set p1="/data/data/com.termux/files/home/1stTwitchRed.ascii"; set p2="/data/data/com.termux/files/home/2ndTwitchViolet.ascii"; set p3="/data/data/com.termux/files/home/3rdTwitchLblue.ascii"; \
+set c=`termux-clipboard-get`;																											     \
+set e=`echo $1 | sed -e 1,2s/.home// | sed -e 1,2s/https...m.twitch.tv.//`;																					     \
+set ee=`echo $c | sed -e 1,2s/.home// | sed -e 1,2s/https...m.twitch.tv.//`;																					     \
+grep $e $p1 >& /dev/null; set s=$status;																									     \
+if ( $s == 0 ) echo "$1 found in 1stTwitchRed.ascii";																								     \
+if ( $s == 0 ) sleep 5s; if ( $s == 0 ) exit 0;																									     \
+grep $ee $p1 >& /dev/null; set s=$status;																									     \
+if ( $s == 0 ) echo "$c found in 1stTwitchRed.ascii";																								     \
+if ( $s == 0 ) sleep 5s; if ( $s == 0 ) exit 0;
+grep $e $p2 >& /dev/null;set s=$status;
+if ( $s == 0 ) echo "$1 found in 2ndTwitchViolet.ascii";
+if ( $s == 0 ) sleep 5s; if ( $s == 0 ) exit 0;
+grep $ee $p2 >& /dev/null; set s=$status;
+if ( $s == 0 ) echo "$c found in 2ndTwitchViolet.ascii";
+if ( $s == 0 ) sleep 5s; if ( $s == 0 ) exit 0;
+grep $e $p3 >& /dev/null;set s=$status;
+if ( $s == 0 ) echo "$1 found in 3rdTwitchLblue.ascii";
+if ( $s == 0 ) sleep 5s; if ( $s == 0 ) exit 0;
+grep $ee $p3 >& /dev/null; set s=$status;
+if ( $s == 0 ) echo "$c found in 3rdTwitchLblue.ascii";
+if ( $s == 0 ) sleep 5s; if ( $s == 0 ) exit 0;
+
+if ( $1 == $c ) then;
+echo $1 >> $p3;
+(echo -n "$1#" >>& $p0;&);&;
+else if ( $1 != $c ) then;
+echo $1 >> $p3;
+echo $c >> $p3;
+(echo -n "$1#" >>& $p0;&);&;
+(echo -n "$c#" >>& $p0);
+endif
+
+#if ( $1 == $c ) goto Label0;
+#echo $1 >> /data/data/com.termux/files/home/3rdTwitchLblue.ascii;
+#Label0:
+#echo $c >> /data/data/com.termux/files/home/3rdTwitchLblue.ascii;
+#if ( $1 == $c ) goto Label1;
+#(echo -n "$1#" >>& /data/data/com.termux/files/usr/tmp/erl_tmp;&);&;
+#Label1:
+#(echo -n "$c#" >>& /data/data/com.termux/files/usr/tmp/erl_tmp);
+
+(am start -n com.chrome.dev/com.google.android.apps.chrome.Main > /dev/null);&
+unset s c e ee s y p0 p1 p2 p3; exit 0;
+#(am start -n mark.via.gp/mark.via.Shell;&);&; exit 0;

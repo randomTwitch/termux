@@ -1,0 +1,12 @@
+#!/data/data/com.termux/files/usr/bin/tcsh
+#New twitch account what to do: Create a new nthTwitchColor.ascii file, create a new grep if's for n-1TwitchColor.ascii file if all grep if's are passed write $1 && copy buffer to that new n+1 file
+#
+echo $1;
+switch ($1) 
+case ^"[W]":
+	echo "W"; 
+	breaksw 
+default:
+	echo 't';
+	breaksw
+endsw

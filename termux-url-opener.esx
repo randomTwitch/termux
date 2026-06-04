@@ -1,0 +1,6 @@
+#!/bin/env elixir
+#a=Enum.count System.argv;
+#IO.puts a;
+File.write("/data/data/com.termux/files/usr/tmp/erl_tmp",Enum.at(System.argv,0)<>"#",[:append]);
+System.shell "am start -n mark.via.gp/mark.via.Shell";
+

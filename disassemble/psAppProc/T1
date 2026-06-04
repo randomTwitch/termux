@@ -1,0 +1,13 @@
+UID        PID  SPID  PPID  C STIME TTY          TIME CMD
+u0_a234  11684 11684 11489  0  1970 pts/0    00:00:00 /data/data/com.termux/files/usr/bin/tcsh /data/data/com.termux/files/usr/bin/tcsh
+u0_a234  22397 22397 11489  0  1970 pts/1    00:00:00 /data/data/com.termux/files/usr/bin/tcsh /data/data/com.termux/files/usr/bin/tcsh
+u0_a234  22623 22623     1  0  1970 ?        00:00:00 lua /data/data/com.termux/files/usr/bin/lua ./test3.lua
+u0_a234  22741 22741 22623  0  1970 ?        00:00:00 sh /system/bin/sh -c lua './test.lua' "https://youtube.com/watch?v=WQhlew3C8pI&si=FdTOOKDvhuIttojP#"
+u0_a234  22745 22745 22741  0  1970 ?        00:00:00 lua /data/data/com.termux/files/usr/bin/lua ./test.lua https://youtube.com/watch?v=WQhlew3C8pI&si=FdTOOKDvhuIttojP#
+u0_a234  22767 22767     1  0  1970 ?        00:00:00 tcsh /data/data/com.termux/files/usr/bin/tcsh -bcf am start -a "android.intent.action.VIEW" -n "org.mozilla.firefox/org.mozilla.fenix.IntentReceiverActivity" --activity-clear-task --es "com.android.browser.application_id" "org.mozilla.firefox" -d "https://youtube.com/watch?v=WQhlew3C8pI&si=FdTOOKDvhuIttojP"
+u0_a234  22769 22769 22745  0  1970 ?        00:00:00 sleep /data/data/com.termux/files/usr/bin/sleep 15s
+u0_a234  22775 22775 22767 35  1970 ?        00:00:01 [main] <defunct>
+u0_a234  22775 23029 22767  1  1970 ?        00:00:00 [Signal Catcher]
+u0_a234  23164 23164 22397  2  1970 pts/1    00:00:00 ps /data/data/com.termux/files/usr/bin/ps -efT
+u0_a234  27079 27079 11684  0  1970 pts/0    00:00:02 vim /data/data/com.termux/files/usr/bin/vim -n ./.login
+u0_a234  27079 27242 11684  0  1970 pts/0    00:00:00 vim /data/data/com.termux/files/usr/bin/vim -n ./.login

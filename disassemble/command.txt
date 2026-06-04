@@ -1,0 +1,2 @@
+tcsh -c "llvm-objdump ../../../usr/bin/bash --syms --symbolize-operands --symbol-description --reloc -g --full-leading-addr --source --show-lma --show-all-symbols --section-headers --raw-clang-ast -l --full-contents --file-headers --dynamic-syms --dynamic-reloc --all-headers --disassemble > ./bash.asm"
+
