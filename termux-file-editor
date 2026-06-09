@@ -13,31 +13,31 @@ set mgs_exit="/data/data/com.termux/files/home/storage/downloads/mgs_exit.m4a"; 
 set p0="/data/data/com.termux/files/usr/tmp/erl_tmp"; set p1="/data/data/com.termux/files/home/1stTwitchRed.ascii"; set p2="/data/data/com.termux/files/home/2ndTwitchViolet.ascii"; set p3="/data/data/com.termux/files/home/3rdTwitchLblue.ascii"; set p4="/data/data/com.termux/files/home/4thTwitchWhite.ascii";
 
 set e=(`grep "" $1`);
-set e=(`echo -n $e | & sed 1,2s/'[A]'/a/g | & sed 1,2s/'[B]'/b/g | & sed 1,2s/'[C]'/c/g | & sed 1,2s/'[D]'/d/g | & sed 1,2s/'[E]'/e/g | & sed 1,2s/'[F]'/f/g | & sed 1,2s/'[G]'/g/g | & sed 1,2s/'[H]'/h/g | & sed 1,2s/'[I]'/i/g | & sed 1,2s/'[J]'/j/g | & sed 1,2s/'[K]'/k/g | & sed 1,2s/'[L]'/l/g | & sed 1,2s/'[M]'/m/g | & sed 1,2s/'[N]'/n/g | & sed 1,2s/'[O]'/o/g | & sed 1,2s/'[P]'/p/g | & sed 1,2s/'[Q]'/q/g | & sed 1,2s/'[R]'/r/g | & sed 1,2s/'[S]'/s/g | & sed 1,2s/'[T]'/t/g | & sed 1,2s/'[U]'/u/g | & sed 1,2s/'[V]'/v/g | & sed 1,2s/'[W]'/w/g | & sed 1,2s/'[X]'/x/g | & sed 1,2s/'[Y]'/y/g | & sed 1,2s/'[Z]'/z/g`);
-echo "$e" |& grep "(" >& /dev/null; set s=$status;
-if ( $s == 0 ) source ./bin/twitchSpecialChars.csh $1; set s=$status;
-if ( $s == 2 | $s == 1 ) exit 0;
-	grep /$e[2]/ $p1 >& /dev/null; set s=$status;
+echo "$e[3]" |& grep "(" >& /dev/null; set s=$status;
+if ( $s == 0 ) source ./bin/twitchSpecialChars.csh $1; set s=$status; #echo $s; $<;
+if ( $s == 2 | $s == 1 ) exit 0; #echo $e[2]; $<;
+set e=(`echo -n $e[2] | & sed 1,2s/'[A]'/a/g | & sed 1,2s/'[B]'/b/g | & sed 1,2s/'[C]'/c/g | & sed 1,2s/'[D]'/d/g | & sed 1,2s/'[E]'/e/g | & sed 1,2s/'[F]'/f/g | & sed 1,2s/'[G]'/g/g | & sed 1,2s/'[H]'/h/g | & sed 1,2s/'[I]'/i/g | & sed 1,2s/'[J]'/j/g | & sed 1,2s/'[K]'/k/g | & sed 1,2s/'[L]'/l/g | & sed 1,2s/'[M]'/m/g | & sed 1,2s/'[N]'/n/g | & sed 1,2s/'[O]'/o/g | & sed 1,2s/'[P]'/p/g | & sed 1,2s/'[Q]'/q/g | & sed 1,2s/'[R]'/r/g | & sed 1,2s/'[S]'/s/g | & sed 1,2s/'[T]'/t/g | & sed 1,2s/'[U]'/u/g | & sed 1,2s/'[V]'/v/g | & sed 1,2s/'[W]'/w/g | & sed 1,2s/'[X]'/x/g | & sed 1,2s/'[Y]'/y/g | & sed 1,2s/'[Z]'/z/g`); #echo $e; $<;
+	grep /$e/ $p1 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e[2] found in 1stTwitchRed.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$e found in 1stTwitchRed.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
 	endif
 
-	grep /$e[2]/ $p2 >& /dev/null;set s=$status;
+	grep /$e/ $p2 >& /dev/null;set s=$status;
 	if ( $s == 0 ) then;
 		(termux-toast "$e[2] found in 2ndTwitchViolet.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
 	endif
 
-	grep /$e[2]/ $p3 >& /dev/null; set s=$status;
+	grep /$e/ $p3 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e[2] found in 3rdTwitchLblue.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$e found in 3rdTwitchLblue.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
 	endif
 
-	grep /$e[2]/ $p4 >& /dev/null; set s=$status;
+	grep /$e/ $p4 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e[2] found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$e found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
 	endif
 
 (rm $1;&);&;
-(echo "https://m.twitch.tv/$e[2]/home" >>& $p4;&);&;
-(echo -n "https://m.twitch.tv/$e[2]/home#" >>& $p0;&);&; wait;
+(echo "https://m.twitch.tv/$e/home" >>& $p4;&);&;
+(echo -n "https://m.twitch.tv/$e/home#" >>& $p0;&);&; wait;
 (play-audio $mgs_exit;&)&; unset e p00 p0 p1 p2 p3 p4 mgs_error mgs_exit mgs_pass s; exit 0;
