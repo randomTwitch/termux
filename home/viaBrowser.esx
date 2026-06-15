@@ -1,0 +1,11 @@
+#!/data/data/com.termux/files/usr/bin/env elixir
+x=File.read("/data/data/com.termux/files/usr/tmp/erl_tmp") |> Tuple.to_list() |> Enum.at(1) |> String.split("#") |> Enum.drop(-1);
+spawn fn -> File.open("/data/data/com.termux/files/usr/tmp/erl_tmp",[:write]); end
+y=Enum.slice x,-1,1; x=Enum.drop x,-1; Process.put :z,Enum.count x;
+if (Enum.count x) > 0 do
+Enum.each x, fn z -> System.shell "am start -n mark.via.gp/mark.via.Shell -d '"<>z<>"'";
+a=Process.get :z; a=Process.put :z,a-1; IO.puts "Links Remaining in the Queue: "<>Integer.to_string a;
+Process.sleep 15000; end
+end
+Process.delete :z;
+Enum.each y, fn y -> System.shell "am start -n mark.via.gp/mark.via.Shell -d '"<>y<>"'"; end

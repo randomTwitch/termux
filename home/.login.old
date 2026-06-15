@@ -1,0 +1,55 @@
+#tset;
+touch --date="" ./UPGRADE;
+cal --vertical --iso -j -w;
+#touch --date="last day" ./UPGRADE;
+#date +%s_%N_%%;
+#lua -e "print(string.format('%x_%x_%%',`date +%s`,`date +%N`));--io.input():read();"
+setenv PS_FORMAT tty,ppid,pid,nlwp,%cpu,%mem,cp,comm,lwp,etime,start_time,tid; #ps -efk +etime;
+setenv LESS "--use-color --long-prompt --line-numbers --tilde";
+printf '\033[1;30m';
+
+alias cwdcmd "printf '$cwd -> $$'";
+#set tperiod=240; alias periodic "time && uptime && pstree -ap && ps efk +etime && source ./UPGRADE";
+set tperiod=1440; alias periodic "(tcsh -l;&)&;";
+#this comm runs lua module under 1 the user need to execute tcsh -l again and quit it again to redo comms or use upper periodic
+#alias
+(exec lua /data/data/com.termux/files/usr/local/LuaPeriodic/luaPeriodicModuleLoader.lua;&);
+alias jobcmd "jobs -l"; set implicitcd=verbose; set listjobs=long; set printexitvalue; set time=1;
+alias timex "( source ./timex ; & )";
+#if exec ends up under 1st process it can only be non interactive doing any input would result in immediate termination
+#it would do output to last connected `tty`
+#this puts lua under 1st process and returns immediately and exits while lua keeps running under 1
+#run this alias and press any key to close the terminal
+alias luaTest3 "(exec lua ./test3.lua;&)&;wait;exit 0;";
+#set uid=localhost@Gilbert; #unable to write files created by other user
+#set user=hexor; #unable to write files
+#set version=',wide,';
+#set colorcat; set catalog='catalog';
+#set correct='complete';
+
+#for executables that do not specify interpreter top line
+alias shell ~/../usr/bin/tcsh
+#Ctrl+h after or before word 
+alias helpcommand "man";
+#echo `pidof lua`_`pidof tcsh`_`pidof sleep`;
+kill -s KILL `pidof lua`;
+#alias helpcommand "(man \!:p&)&"; #with & inside makes sub process 1's sub and stays there forever
+#kill -s KILL `pidof man` #to destack all the man procs under 1"
+cal --vertical --iso -j -w;
+#the last date command is printed before pstree because of &
+#tcsh -bc '((date +%s_%N && pstree -ap)&)'; lua -e "print(string.format('%x_%x',`date +%s`,`date +%N`));--io.input():read();"; goto Label01;
+
+#set savehist="10 merge lock";
+#set histfile="./.histfile"
+#sched +00:01 "(source ~/init.csh)";
+
+#time
+#date
+#uname -a
+#alias update "( apt-get update && apt-get upgrade ; & ) | & ( less ) &";
+#Label01:
+#date +%s_%N_%q; lua -e "print(string.format('%x_%x_YearlyQuarter',`date +%s`,`date +%N`));--io.input():read();";
+#alias update "( sleep 5s && echo -n "fg" >> `tty` ; & ) & ; ( apt-get update && apt-get upgrade ; & ) | & ( less ) & ;";
+#alias procTempIP "sleep 5s && ( ( lsclocks --cpu-clock 1 ; & ) | & ( grep cpu ; & ) && ( lsclocks --cpu-clock 2 ; & ) | & ( grep cpu ; & ) && ( lsclocks --cpu-clock 6 ; & ) | & ( grep cpu ; & ) && ( termux-battery-status ; & ) | & ( grep temp ; & ) && ( fastfetch ; & ) | & ( grep rmnet ; & ) ; & ) | & ( ( more ) )";
+renice +20 $$;
+exit 0;

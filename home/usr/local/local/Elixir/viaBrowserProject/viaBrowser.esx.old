@@ -1,0 +1,56 @@
+#this script is run by user in terminal as argument to elixir command
+#z=[a: :atom,b: aatom] #keywordList
+#to get all keys #for {a,b} <- z do IO.puts a; end 
+#to get all values #for {a,b} <- z do IO.puts(b); end
+x=File.read("/data/data/com.termux/files/usr/tmp/erl_tmp") |> Tuple.to_list() |> Enum.at(1) |> String.split("#") |> Enum.drop(-1);
+y=Enum.slice x,-1,1; x=Enum.drop x,-1;
+
+#
+#y=Enum.to_list(x)|>List.to_string;
+#spawn fn -> System.shell "exec tcsh -bcft '(sleep 5s && echo -n "<>y<>" > /dev/pts/0;&);'"; end
+#
+
+#
+#c="exec tcsh -bcft '(sleep 5s && echo -n "<>x<>"#  >>& /dev/pts/0;&);&';";
+#spid=spawn fn -> receive do c -> c; Enum.to_list(x)|>Enum.each(fn x -> System.shell c end); end; end; send spid,c;
+#
+
+#x=spawn fn -> Process.sleep 10000; IO.puts (Enum.count x)+1; Enum.drop x,-1; end
+aa=self();
+#a=spawn fn -> receive do :hello -> ""; IO.puts "";  after 10000 -> IO.puts ""; send aa,Enum.drop(x,-1); end end
+#x=receive do x->x; end
+if (Enum.count x) > 0 do
+Enum.each x, fn z -> System.shell "am start -n mark.via.gp/mark.via.Shell -d '"<>z<>"'";
+#Process.put(:z,Enum.drop(x,-1)); Process.get(:z); IO.puts (Enum.count x)+1;
+#a=spawn fn -> receive do :hello -> ""; IO.puts "";  after 10000 -> IO.puts (Enum.count x)+1; send aa,Enum.drop(x,-1); end end
+#x=receive do x->x; end
+#Process.sleep 15000;
+#
+#x=for z <- x do 
+#System.shell "am start -n mark.via.gp/mark.via.Shell -d '"<>z<>"'";
+#a=spawn fn -> receive do :hello -> ""; IO.puts "";  after 10000 -> IO.puts (Enum.count x)+1; send aa,Enum.drop(x,-1); end end
+#x=receive do x->x; end
+#Enum.drop x,-1;
+#end
+Process.sleep 15000;
+end
+end
+#IO.puts Enum.count x;
+#a=List.to_string y;
+#a="\""<>a<>"\"";
+#y=List.update_at y,0,fn _ -> a end;
+#Enum.each y, fn y -> System.shell "exec tcsh -bcft 'am start -n mark.via.gp/mark.via.Shell -d "<>y<>"'"; end
+Enum.each y, fn y -> System.shell "am start -n mark.via.gp/mark.via.Shell -d '"<>y<>"'"; end
+File.open("/data/data/com.termux/files/usr/tmp/erl_tmp",[:write]);
+#b=List.to_string y;
+#a="'"<>a<>"'"; IO.puts a;
+#y=List.update_at y,0,fn _ -> a end;
+#Enum.each y, fn y -> System.shell "exec tcsh -bcft 'am start -n mark.via.gp/mark.via.Shell -d "<>y<>"'"; end
+#b="exec tcsh -bcft 'am start -n mark.via.gp/mark.via.Shell -d '"<>b<>"''";
+#b="am start -n mark.via.gp/mark.via.Shell -d '"<>b<>"'';";
+#IO.puts b;
+#IO.puts String.length b;
+#System.shell b;
+#instead of using default sh you can use tcsh too
+#
+#

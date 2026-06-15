@@ -1,0 +1,5 @@
+uptime
+time
+$<
+#echo `time`\\n---------- >> ./terminalTime;
+exit 0;

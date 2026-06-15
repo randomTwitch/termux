@@ -1,0 +1,28 @@
+defmodule Viabrowser do
+@moduledoc """
+Compied ex module for via browser.
+"""
+@doc """
+This is a function. Takes an interger returns non alpha number.
+"""
+@type n :: number()
+@spec f(n) :: number()
+def f(n \\ 0) when n > -1 do
+x=File.read("/data/data/com.termux/files/usr/tmp/erl_tmp") |> Tuple.to_list() |> Enum.at(1) |> String.split("#") |> Enum.drop(-1) |> Enum.uniq(); 
+if((Enum.count x) == 0, do: Process.exit(self(),:normal), else: IO.write "Links to go: ");
+spawn fn -> Process.sleep 6000; Enum.each x,fn x -> File.write "/dev/pts/0",IO.ANSI.color(3)<>x; File.write "/dev/pts/0",IO.ANSI.blue()<>"# "<>IO.ANSI.reset(); end; exit :normal; end;
+spawn fn -> File.open("/data/data/com.termux/files/usr/tmp/erl_tmp",[:write]); exit :normal; end;
+y=Enum.slice x,-1,1; x=Enum.drop x,-1; Process.put :z,Enum.count x;
+if (Enum.count x) > 0 do
+Enum.each x, fn z -> System.shell "((am start -n mark.via.gp/mark.via.Shell -d '"<>z<>"'&) 2>&- | /dev/)&";
+a=Process.get :z; a=Process.put :z,a-1; #IO.puts "Links Remaining in the Queue: "<>Integer.to_string a;
+spid=spawn fn -> receive do [a,ppid] -> [a,ppid]; IO.write IO.ANSI.blue()<>Integer.to_string(a)<>"# "<>IO.ANSI.reset()<>IO.ANSI.home(); send ppid,a-1; after 5000 -> IO.puts "nothing sent"; end; exit :normal; end;
+send spid,[a,self()];
+#a=receive do a -> a; end; IO.write "\nLinks Used: "<>Integer.to_string(a)<>"\n";
+Process.sleep 15000; end;
+end
+Process.delete :z;
+Enum.each y, fn y -> System.shell "((am start -n mark.via.gp/mark.via.Shell -d '"<>y<>"'&) 2>&- | /dev/&)&"; end;
+  n
+end
+end
