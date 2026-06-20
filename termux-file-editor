@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/tcsh
+#!/data/data/com.termux/files/usr/bin/tcsh -f
 #
 #echo TEST\\n$0\\n$1 > /dev/pts/0;
 #echo "TEST" > /dev/pts/1;#

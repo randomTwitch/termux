@@ -1,5 +1,10 @@
 set prompt=•' ';
+set correct=complete;
+set autocorrect;
 set autolist;
+set filec;
+set vimode;
+bindkey -e;
 bindkey "^I" list-choices;
 unhash;
 exit 0;
