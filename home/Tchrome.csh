@@ -1,6 +1,6 @@
-@ time = 15;
 set a = ( `grep -e "" /data/data/com.termux/files/usr/tmp/erl_tmp | sed 1,2s/'#'/'\n'/g` );
 if ( $#a == 0 ) exit 0;
+@ time = 15;
 @ counter = $#a;
 foreach b ( $a )
 	if ( $counter != 0 ) @ counter = $counter - 1;
