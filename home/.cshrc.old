@@ -19,4 +19,3 @@ unhash
 #date +%s_%N_\#1
 #lua -e "print(string.format('%x_%x_#1',`date +%s`,`date +%N`));--io.input():read();"
 exit 0;
-
