@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/env -S /data/data/com.termux/files/usr/bin/tcsh -f
 
-unsetenv *;
+#unsetenv *;
 
 #echo TEST\\n$0\\n$1 > /dev/pts/0;
 #echo "TEST" > /dev/pts/1;#

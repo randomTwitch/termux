@@ -1,0 +1,20 @@
+(setq ispell-program-name "aspell")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(desktop-auto-save-timeout 360)
+ '(desktop-save-mode t)
+ '(menu-bar-mode nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(mode-line ((t (:background "gray30" :foreground "gray80" :box (:line-width (1 . -1) :style released-button)))))
+ '(tab-bar ((t (:inherit variable-pitch :background "gray30" :foreground "gray80"))))
+ '(tab-bar-tab-inactive ((t (:inherit tab-bar-tab :background "grey19"))))
+ '(tab-line ((t (:inherit variable-pitch :background "grey30" :foreground "grey80" :height 0.9))))
+ '(tab-line-tab-current ((t (:inherit tab-line-tab :background "gray30"))))
+ '(tab-line-tab-inactive ((t (:inherit tab-line-tab :background "grey19")))))
