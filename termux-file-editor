@@ -8,7 +8,7 @@
 if ( $* == "" ) exit 1;
 
 renice +20 $$;
-echo '<'$$'>';
+#echo '<'$$'>';
 
 set mgs_exit="/data/data/com.termux/files/home/storage/downloads/mgs_exit.m4a"; set mgs_pass="/data/data/com.termux/files/home/storage/downloads/mgs_pass.m4a"; set mgs_error="/data/data/com.termux/files/home/storage/downloads/mgs_error.m4a";
 (play-audio $mgs_pass;&)&;
@@ -39,7 +39,7 @@ set e=(`echo -n $e[2] | & sed 1,2s/'[A]'/a/g | & sed 1,2s/'[B]'/b/g | & sed 1,2s
 		(termux-toast "$e found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
 	endif
 
-(rm $1;&);&;
+(rm $1;);&;
 (echo "https://m.twitch.tv/$e/home" >>& $p4;&);&;
-(echo -n "https://m.twitch.tv/$e/home#" >>& $p0;&);&; wait;
-(play-audio $mgs_exit;&)&; unset e p00 p0 p1 p2 p3 p4 mgs_error mgs_exit mgs_pass s; exit 0;
+(echo -n "https://m.twitch.tv/$e/home#" >>& $p0;&);&;
+(play-audio $mgs_exit;&)&; unset e p00 p0 p1 p2 p3 p4 mgs_error mgs_exit mgs_pass s; wait; exit 0;

@@ -6,7 +6,7 @@
 if ( $* == "" ) exit 1;
 
 renice +20 $$;
-echo '<'$$'>';
+#echo '<'$$'>';
 
 set mgs_exit="/data/data/com.termux/files/home/storage/downloads/mgs_exit.m4a"; set mgs_pass="/data/data/com.termux/files/home/storage/downloads/mgs_pass.m4a"; set mgs_error="/data/data/com.termux/files/home/storage/downloads/mgs_error.m4a";
 (play-audio $mgs_pass;&)&;
@@ -89,7 +89,6 @@ else if ( $e != $ee ) then;
 	(echo -n "$c#" >>& $p0);
 endif
 
-wait;
 #(am start -n com.chrome.dev/com.google.android.apps.chrome.Main > /dev/null);&
-(play-audio $mgs_exit;&)&; unset s c e ee s y p0 p1 p2 p3 p4 mgs_error mgs_exit mgs_pass; exit 0;
+(play-audio $mgs_exit;&)&; unset s c e ee s y p0 p1 p2 p3 p4 mgs_error mgs_exit mgs_pass; wait; exit 0;
 #(am start -n mark.via.gp/mark.via.Shell;&);&; exit 0;

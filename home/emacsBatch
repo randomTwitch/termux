@@ -1,0 +1,2 @@
+emacs --batch --insert=./chrome.txt --eval '(progn (print (buffer-string)))' | less
+emacs --batch --eval '(progn (find-file "./chrome.txt") (print (buffer-string)))' | less

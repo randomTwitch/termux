@@ -6,7 +6,8 @@ if ( $#a == 0 ) exit 0;
 foreach b ( $a )
 	if ( $counter != 0 ) @ counter = $counter - 1;
 #	( sleep $timer\s; am start -n com.android.chrome/com.google.android.apps.chrome.Main -d $b; echo "Remaining " $counter;& );& ;
-	( sleep $timer\s; am start -n mark.via.gp/mark.via.Shell -d $b; echo "Remaining " $counter;& );& ;
+	( sleep $timer\s; am start -n mark.via.gp/mark.via.Shell -d $b; echo -n "\n Remaining " $counter;& );& ;
 	@ timer += 15;
 end
-echo "" > /data/data/com.termux/files/usr/tmp/erl_tmp; unset timer counter a b; exit 0;
+(echo -n "" > /data/data/com.termux/files/usr/tmp/erl_tmp;&);&;
+unset timer counter a b; wait; exit 0;

@@ -1,1 +1,3 @@
+; -*- mode: lisp; eval: (auto-fill-mode 1); -*-
 am start -n com.android.chrome/com.google.android.apps.chrome.Main -d bingo
+want match curious educate junk current ring jazz fence squeeze whisper hedgehog sentence frost fabric decrease erase sing piece whip lady tired divide pave
