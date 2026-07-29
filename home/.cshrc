@@ -8,4 +8,4 @@ set vimode;
 bindkey -e;
 bindkey "^I" list-choices;
 unhash;
-exit 0;
+#exit 0;

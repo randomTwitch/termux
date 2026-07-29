@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/berry
+~MSle0~/mole
 
 # Last Substitute Search Pattern:
 ~MSle0&;&
@@ -21,39 +21,67 @@ $
 
 # Command Line History (newest to oldest):
 :qall!
-|2,0,1782970207,,"qall!"
-:w
-|2,0,1782965796,,"w"
+|2,0,1784508165,,"qall!"
 :e ../usr/tmp/erl_tmp 
-|2,0,1782965680,,"e ../usr/tmp/erl_tmp "
-:tabnew 
-|2,0,1782965675,,"tabnew "
+|2,0,1784508143,,"e ../usr/tmp/erl_tmp "
+:set number
+|2,0,1783833801,,"set number"
+:wqall!
+|2,0,1783830891,,"wqall!"
+:w
+|2,0,1783820801,,"w"
+:wqall! 
+|2,0,1783820773,,"wqall! "
+:e ./Tchrome.csh
+|2,0,1783820267,,"e ./Tchrome.csh"
+:e ./.ssh/id_rsa.pub 
+|2,0,1783818969,,"e ./.ssh/id_rsa.pub "
+:b 2
+|2,0,1783386359,,"b 2"
+:e ./1stTwitchRed.ascii 
+|2,0,1783115313,,"e ./1stTwitchRed.ascii "
+:help
+|2,0,1783115298,,"help"
+:e ./4thTwitchWhite.ascii 
+|2,0,1783115235,,"e ./4thTwitchWhite.ascii "
+:e ./1stTwitchRed.ascii
+|2,0,1783110243,,"e ./1stTwitchRed.ascii"
+:.,.+11!nn
+|2,0,1783051307,,".,.+11!nn"
+:.,.+16!nnnnn
+|2,0,1783051266,,".,.+16!nnnnn"
 :e ./4thTwitchWhite.ascii
-|2,0,1782965660,,"e ./4thTwitchWhite.ascii"
+|2,0,1783049736,,"e ./4thTwitchWhite.ascii"
+:tabnew 
+|2,0,1783049729,,"tabnew "
+:e ../usr/etc/csh.cshrc 
+|2,0,1783049422,,"e ../usr/etc/csh.cshrc "
+:e
+|2,0,1783049340,,"e"
+:e ./bin/termux-file-editor 
+|2,0,1783049302,,"e ./bin/termux-file-editor "
+:checktime
+|2,0,1783049248,,"checktime"
+:e ./bin/termux-url-opener 
+|2,0,1782985927,,"e ./bin/termux-url-opener "
+:e ./.login 
+|2,0,1782985725,,"e ./.login "
+:e ./.cshrc 
+|2,0,1782985711,,"e ./.cshrc "
+:e ./Tchrome.csh 
+|2,0,1782985608,,"e ./Tchrome.csh "
+:e ./tFile.txt
+|2,0,1782978363,,"e ./tFile.txt"
+:close!
+|2,0,1782976966,,"close!"
+:terminal
+|2,0,1782976958,,"terminal"
+:vsplit
+|2,0,1782976684,,"vsplit"
 :e ./chrome.txt 
 |2,0,1782962790,,"e ./chrome.txt "
 :e ../usr/etc/
 |2,0,1782962699,,"e ../usr/etc/"
-:e ../usr/etc/csh.cshrc 
-|2,0,1782962665,,"e ../usr/etc/csh.cshrc "
-:e ./.cshrc 
-|2,0,1782962600,,"e ./.cshrc "
-:e ./.login 
-|2,0,1782962590,,"e ./.login "
-:e ./Tchrome.csh
-|2,0,1782962189,,"e ./Tchrome.csh"
-:wqall! 
-|2,0,1782961876,,"wqall! "
-:set number
-|2,0,1782885370,,"set number"
-:e ./bin/termux-url-opener 
-|2,0,1782693632,,"e ./bin/termux-url-opener "
-:e ./1stTwitchRed.ascii 
-|2,0,1782508478,,"e ./1stTwitchRed.ascii "
-:e ./4thTwitchWhite.ascii 
-|2,0,1782508360,,"e ./4thTwitchWhite.ascii "
-:e ./bin/termux-file-editor 
-|2,0,1782508061,,"e ./bin/termux-file-editor "
 :substitute /;&/;/g 1000 
 |2,0,1782256649,,"substitute /;&/;/g 1000 "
 :substitute /;/;\&/g 1000 
@@ -72,20 +100,12 @@ $
 |2,0,1781996958,,"e ../usr/tmp/erl_tmp"
 :e ./termux-url-opener 
 |2,0,1781936459,,"e ./termux-url-opener "
-:b 2
-|2,0,1781827155,,"b 2"
 :w 
 |2,0,1781765085,,"w "
-:close!
-|2,0,1781321670,,"close!"
-:terminal
-|2,0,1781321397,,"terminal"
 :e ./bin/twitchDuplicateCheck.csh 
 |2,0,1781321369,,"e ./bin/twitchDuplicateCheck.csh "
 :q
 |2,0,1780883062,,"q"
-:checktime
-|2,0,1780883056,,"checktime"
 :2
 |2,0,1780882821,,"2"
 :e 2ndTwitchViolet.ascii
@@ -350,12 +370,8 @@ $
 |2,0,1778967106,,"substitute /|/|\\&/g 1000 "
 :substitute /|/|&/g 1000 
 |2,0,1778967086,,"substitute /|/|&/g 1000 "
-:e
-|2,0,1778829771,,"e"
 :redo
 |2,0,1778816964,,"redo"
-:e ./1stTwitchRed.ascii
-|2,0,1778816921,,"e ./1stTwitchRed.ascii"
 :qa!
 |2,0,1778536529,,"qa!"
 :e ./lsclocks.csh
@@ -1058,8 +1074,6 @@ $
 |2,0,1756457297,,"set encoding=utf-8"
 :w ./Followers3
 |2,0,1756457153,,"w ./Followers3"
-:help
-|2,0,1756441281,,"help"
 :help substring
 |2,0,1756441104,,"help substring"
 :help subscript
@@ -2006,22 +2020,28 @@ $
 |2,0,1741310895,,"w ./.vimrc"
 :help pattern
 |2,0,1741204802,,"help pattern"
-:mksession ./sessionCSH.vim 
-|2,0,1741134985,,"mksession ./sessionCSH.vim "
-:vsplit ./.logout
-|2,0,1741134774,,"vsplit ./.logout"
-:echo $HOME
-|2,0,1741117688,,"echo $HOME"
-:echo ~
-|2,0,1741117618,,"echo ~"
-:Lexplore ./firefox.txt
-|2,0,1741065095,,"Lexplore ./firefox.txt"
-:exit 20
-|2,0,1740966101,,"exit 20"
-:help sscanf
-|2,0,1740963917,,"help sscanf"
 
 # Search String History (newest to oldest):
+?/mole
+|2,1,1783830883,47,"mole"
+?/dameo
+|2,1,1783830817,47,"dameo"
+?/yugg
+|2,1,1783405225,47,"yugg"
+?/cherub
+|2,1,1783386366,47,"cherub"
+?/bambi
+|2,1,1783385552,47,"bambi"
+?/kristenl
+|2,1,1783336012,47,"kristenl"
+?/bonnie
+|2,1,1783110250,47,"bonnie"
+?/bonn
+|2,1,1783110235,47,"bonn"
+?/https:\/\/www.twitch.tv/
+|2,1,1783051459,47,"https:\\/\\/www.twitch.tv/"
+?/aria-label
+|2,1,1783051232,47,"aria-label"
 ?/xinxe:
 |2,1,1782855440,47,"xinxe:"
 ?/berry
@@ -2704,8 +2724,6 @@ $
 |2,1,1757141290,47,"scarol"
 ?/twisti
 |2,1,1757141275,47,"twisti"
-?/bonn
-|2,1,1757141252,47,"bonn"
 ?/sleepyl
 |2,1,1757141233,47,"sleepyl"
 ?/mayavh
@@ -4005,24 +4023,6 @@ $
 |2,1,1737015379,47,"hello"
 ?/pc
 |2,1,1737011557,47,"pc"
-?/,pc
-|2,1,1737011538,47,",pc"
-?/@
-|2,1,1737011273,47,"@"
-?/mov
-|2,1,1736953899,47,"mov"
-?/clang
-|2,1,1736771971,47,"clang"
-??\a
-|2,1,1735582343,63,"\\a"
-?/stddef
-|2,1,1735494335,47,"stddef"
-? \<F\>
-|2,1,1735328426,,"\\<F\\>"
-?/%
-|2,1,1735052877,47,"%"
-?/blob
-|2,1,1734775108,47,"blob"
 
 # Expression History (newest to oldest):
 =1
@@ -4189,38 +4189,38 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	CHAR	0
+"0	CHAR	0
 	https://m.twitch.tv/perishforpluto/home
 	https://m.twitch.tv/sadderdazetv/home
 	https://m.twitch.tv/athenawarqueen/home
-|3,1,0,0,3,0,1782965667,"https://m.twitch.tv/perishforpluto/home","https://m.twitch.tv/sadderdazetv/home","https://m.twitch.tv/athenawarqueen/home"
-"1	LINE	0
-		( sleep $timer\s; am start -n mark.via.gp/mark.via.Shell -d $b; echo "Remaining " $counter;& );& ;
-|3,0,1,1,1,0,1782964806,"	( sleep $timer\\s; am start -n mark.via.gp/mark.via.Shell -d $b; echo \"Remaining \" $counter;& );& ;"
+|3,0,0,0,3,0,1782985325,"https://m.twitch.tv/perishforpluto/home","https://m.twitch.tv/sadderdazetv/home","https://m.twitch.tv/athenawarqueen/home"
+""1	LINE	0
+	https://m.twitch.tv/mole/home
+|3,1,1,1,1,0,1783830886,"https://m.twitch.tv/mole/home"
 "2	LINE	0
-	#am start -n mark.via.gp/mark.via.Shell -d t
-|3,0,2,1,1,0,1782964796,"#am start -n mark.via.gp/mark.via.Shell -d t"
+	https://m.twitch.tv/dameowie/home
+|3,0,2,1,1,0,1783830821,"https://m.twitch.tv/dameowie/home"
 "3	LINE	0
-	#am start -n com.android.chrome/com.google.android.apps.chrome.Main -d "bingo.com"
-|3,0,3,1,1,0,1782964795,"#am start -n com.android.chrome/com.google.android.apps.chrome.Main -d \"bingo.com\""
+	date
+|3,0,3,1,1,0,1783821083,"date"
 "4	LINE	0
-	https://m.twitch.tv/yungelderberry/home
-|3,0,4,1,1,0,1782779354,"https://m.twitch.tv/yungelderberry/home"
+	https://m.twitch.tv/yuggie_tv/home
+|3,0,4,1,1,0,1783405227,"https://m.twitch.tv/yuggie_tv/home"
 "5	LINE	0
-	https://m.twitch.tv/xanthe/home
-|3,0,5,1,1,0,1782508615,"https://m.twitch.tv/xanthe/home"
+	
+|3,0,5,1,1,0,1783386383,""
 "6	LINE	0
-	https://m.twitch.tv/pinionpaint/home
-|3,0,6,1,1,0,1782508597,"https://m.twitch.tv/pinionpaint/home"
+	https://m.twitch.tv/cherubcode/home
+|3,0,6,1,1,0,1783386368,"https://m.twitch.tv/cherubcode/home"
 "7	LINE	0
 	
-|3,0,7,1,1,0,1782508419,""
+|3,0,7,1,1,0,1783385591,""
 "8	LINE	0
-	#!/data/data/com.termux/files/usr/bin/env /data/data/com.termux/files/usr/bin/tcsh -f
-|3,0,8,1,1,0,1782508286,"#!/data/data/com.termux/files/usr/bin/env /data/data/com.termux/files/usr/bin/tcsh -f"
+	https://m.twitch.tv/bambib00/home
+|3,0,8,1,1,0,1783385569,"https://m.twitch.tv/bambib00/home"
 "9	LINE	0
-	https://m.twitch.tv/stanwilkins/home
-|3,0,9,1,1,0,1782353392,"https://m.twitch.tv/stanwilkins/home"
+	https://m.twitch.tv/kristenlanae/home
+|3,0,9,1,1,0,1783336015,"https://m.twitch.tv/kristenlanae/home"
 "c	LINE	0
 	test
 |3,0,12,1,1,0,1743743095,"test"
@@ -4257,302 +4257,239 @@ $
 # File marks:
 'M  3  11  ~/lsclocks.txt
 |4,77,3,11,1753782981,"~/lsclocks.txt"
-'0  30  0  /data/data/com.termux/files/usr/bin/am
-|4,48,30,0,1782970207,"/data/data/com.termux/files/usr/bin/am"
-'1  1  0  ~/testFile
-|4,49,1,0,1782966965,"~/testFile"
-'2  8  0  ~/#termux-url-opener#
-|4,50,8,0,1782966608,"~/#termux-url-opener#"
-'3  8  1  ~/Tchrome.csh
-|4,51,8,1,1782965893,"~/Tchrome.csh"
-'4  8  0  ~
-|4,52,8,0,1782965594,"~"
-'5  12  66  ~/Tchrome.csh
-|4,53,12,66,1782965361,"~/Tchrome.csh"
-'6  12  66  ~/Tchrome.csh
-|4,54,12,66,1782965361,"~/Tchrome.csh"
-'7  1  0  ~/Tchrome.csh
-|4,55,1,0,1782964164,"~/Tchrome.csh"
-'8  3  0  ~/Tchrome.csh
-|4,56,3,0,1782964164,"~/Tchrome.csh"
-'9  1  0  ~/Tchrome.csh
-|4,57,1,0,1782964164,"~/Tchrome.csh"
+'0  1  0  /data/data/com.termux/files/usr/tmp/erl_tmp
+|4,48,1,0,1784508165,"/data/data/com.termux/files/usr/tmp/erl_tmp"
+'1  3  0  ~/.ssh/known_hosts
+|4,49,3,0,1783833851,"~/.ssh/known_hosts"
+'2  1350  0  ~/1stTwitchRed.ascii
+|4,50,1350,0,1783830891,"~/1stTwitchRed.ascii"
+'3  713  0  ~/1stTwitchRed.ascii
+|4,51,713,0,1783830828,"~/1stTwitchRed.ascii"
+'4  713  0  ~/1stTwitchRed.ascii
+|4,52,713,0,1783830828,"~/1stTwitchRed.ascii"
+'5  1  0  ~/.ssh/rc
+|4,53,1,0,1783821088,"~/.ssh/rc"
+'6  1  0  ~/.ssh/rc
+|4,54,1,0,1783821026,"~/.ssh/rc"
+'7  1  3  ~/.ssh/rc
+|4,55,1,3,1783821018,"~/.ssh/rc"
+'8  1  3  ~/.ssh/rc
+|4,56,1,3,1783821018,"~/.ssh/rc"
+'9  1  0  ~/.ssh/rc
+|4,57,1,0,1783820822,"~/.ssh/rc"
 
 # Jumplist (newest first):
--'  30  0  /data/data/com.termux/files/usr/bin/am
-|4,39,30,0,1782970207,"/data/data/com.termux/files/usr/bin/am"
--'  1  0  /data/data/com.termux/files/usr/bin/am
-|4,39,1,0,1782970180,"/data/data/com.termux/files/usr/bin/am"
--'  1  0  ~/testFile
-|4,39,1,0,1782966965,"~/testFile"
--'  1  0  ~/testFile
-|4,39,1,0,1782966965,"~/testFile"
--'  8  0  ~/#termux-url-opener#
-|4,39,8,0,1782966608,"~/#termux-url-opener#"
--'  8  0  ~/#termux-url-opener#
-|4,39,8,0,1782966608,"~/#termux-url-opener#"
--'  8  0  ~/#termux-url-opener#
-|4,39,8,0,1782966608,"~/#termux-url-opener#"
--'  8  0  ~/#termux-url-opener#
-|4,39,8,0,1782966608,"~/#termux-url-opener#"
--'  1  0  ~/#termux-url-opener#
-|4,39,1,0,1782966567,"~/#termux-url-opener#"
--'  1  0  ~/#termux-url-opener#
-|4,39,1,0,1782966567,"~/#termux-url-opener#"
--'  1  0  ~/#termux-url-opener#
-|4,39,1,0,1782966567,"~/#termux-url-opener#"
--'  1  0  ~/#termux-url-opener#
-|4,39,1,0,1782966567,"~/#termux-url-opener#"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782965893,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782965893,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782965893,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782965893,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782965893,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782965893,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782965893,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782965893,"~/Tchrome.csh"
--'  1  0  ~/Tchrome.csh
-|4,39,1,0,1782965626,"~/Tchrome.csh"
--'  1  0  ~/Tchrome.csh
-|4,39,1,0,1782965626,"~/Tchrome.csh"
--'  1  0  ~/Tchrome.csh
-|4,39,1,0,1782965626,"~/Tchrome.csh"
--'  1  0  ~/Tchrome.csh
-|4,39,1,0,1782965626,"~/Tchrome.csh"
--'  1  0  ~/Tchrome.csh
-|4,39,1,0,1782965626,"~/Tchrome.csh"
--'  1  0  ~/Tchrome.csh
-|4,39,1,0,1782965626,"~/Tchrome.csh"
--'  1  0  ~/Tchrome.csh
-|4,39,1,0,1782965626,"~/Tchrome.csh"
--'  1  0  ~/Tchrome.csh
-|4,39,1,0,1782965626,"~/Tchrome.csh"
--'  8  0  ~
-|4,39,8,0,1782965594,"~"
--'  8  0  ~
-|4,39,8,0,1782965594,"~"
--'  8  0  ~
-|4,39,8,0,1782965594,"~"
--'  8  0  ~
-|4,39,8,0,1782965594,"~"
--'  8  0  ~
-|4,39,8,0,1782965594,"~"
--'  8  0  ~
-|4,39,8,0,1782965594,"~"
--'  8  0  ~
-|4,39,8,0,1782965594,"~"
--'  8  0  ~
-|4,39,8,0,1782965594,"~"
--'  8  0  ~
-|4,39,8,0,1782965594,"~"
--'  8  0  ~
-|4,39,8,0,1782965594,"~"
--'  8  0  ~
-|4,39,8,0,1782965594,"~"
--'  8  0  ~
-|4,39,8,0,1782965594,"~"
--'  8  0  ~
-|4,39,8,0,1782965594,"~"
--'  8  0  ~
-|4,39,8,0,1782965594,"~"
--'  8  0  ~
-|4,39,8,0,1782965594,"~"
--'  8  0  ~
-|4,39,8,0,1782965594,"~"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  12  66  ~/Tchrome.csh
-|4,39,12,66,1782965361,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782964952,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782964952,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782964952,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782964952,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782964952,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782964952,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782964952,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782964952,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782964952,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782964952,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782964952,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782964952,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782964952,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782964952,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782964952,"~/Tchrome.csh"
--'  8  1  ~/Tchrome.csh
-|4,39,8,1,1782964952,"~/Tchrome.csh"
--'  10  15  ~/Tchrome.csh
-|4,39,10,15,1782964406,"~/Tchrome.csh"
--'  10  15  ~/Tchrome.csh
-|4,39,10,15,1782964406,"~/Tchrome.csh"
--'  10  15  ~/Tchrome.csh
-|4,39,10,15,1782964406,"~/Tchrome.csh"
--'  10  15  ~/Tchrome.csh
-|4,39,10,15,1782964406,"~/Tchrome.csh"
--'  10  15  ~/Tchrome.csh
-|4,39,10,15,1782964406,"~/Tchrome.csh"
--'  10  15  ~/Tchrome.csh
-|4,39,10,15,1782964406,"~/Tchrome.csh"
--'  10  15  ~/Tchrome.csh
-|4,39,10,15,1782964406,"~/Tchrome.csh"
--'  10  15  ~/Tchrome.csh
-|4,39,10,15,1782964406,"~/Tchrome.csh"
--'  10  15  ~/Tchrome.csh
-|4,39,10,15,1782964406,"~/Tchrome.csh"
--'  10  15  ~/Tchrome.csh
-|4,39,10,15,1782964406,"~/Tchrome.csh"
--'  10  15  ~/Tchrome.csh
-|4,39,10,15,1782964406,"~/Tchrome.csh"
--'  10  15  ~/Tchrome.csh
-|4,39,10,15,1782964406,"~/Tchrome.csh"
--'  10  15  ~/Tchrome.csh
-|4,39,10,15,1782964406,"~/Tchrome.csh"
--'  10  15  ~/Tchrome.csh
-|4,39,10,15,1782964406,"~/Tchrome.csh"
--'  10  15  ~/Tchrome.csh
-|4,39,10,15,1782964406,"~/Tchrome.csh"
--'  10  15  ~/Tchrome.csh
-|4,39,10,15,1782964406,"~/Tchrome.csh"
+-'  1  0  /data/data/com.termux/files/usr/tmp/erl_tmp
+|4,39,1,0,1784508165,"/data/data/com.termux/files/usr/tmp/erl_tmp"
+-'  1  0  ~/4thTwitchWhite.ascii
+|4,39,1,0,1784508125,"~/4thTwitchWhite.ascii"
+-'  3  0  ~/.ssh/known_hosts
+|4,39,3,0,1783833851,"~/.ssh/known_hosts"
+-'  1  0  ~/.ssh/known_hosts
+|4,39,1,0,1783833734,"~/.ssh/known_hosts"
+-'  1350  0  ~/1stTwitchRed.ascii
+|4,39,1350,0,1783830891,"~/1stTwitchRed.ascii"
+-'  1350  0  ~/1stTwitchRed.ascii
+|4,39,1350,0,1783830891,"~/1stTwitchRed.ascii"
+-'  1  0  ~/1stTwitchRed.ascii
+|4,39,1,0,1783830883,"~/1stTwitchRed.ascii"
+-'  1  0  ~/1stTwitchRed.ascii
+|4,39,1,0,1783830883,"~/1stTwitchRed.ascii"
+-'  713  0  ~/1stTwitchRed.ascii
+|4,39,713,0,1783830828,"~/1stTwitchRed.ascii"
+-'  713  0  ~/1stTwitchRed.ascii
+|4,39,713,0,1783830828,"~/1stTwitchRed.ascii"
+-'  713  0  ~/1stTwitchRed.ascii
+|4,39,713,0,1783830828,"~/1stTwitchRed.ascii"
+-'  713  0  ~/1stTwitchRed.ascii
+|4,39,713,0,1783830828,"~/1stTwitchRed.ascii"
+-'  1  0  ~/1stTwitchRed.ascii
+|4,39,1,0,1783830817,"~/1stTwitchRed.ascii"
+-'  1  0  ~/1stTwitchRed.ascii
+|4,39,1,0,1783830817,"~/1stTwitchRed.ascii"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783821088,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783821088,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783821088,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783821088,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783821088,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783821088,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783821088,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783821088,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783821026,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783821026,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783821026,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783821026,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783821026,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783821026,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783821026,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783821026,"~/.ssh/rc"
+-'  1  3  ~/.ssh/rc
+|4,39,1,3,1783821018,"~/.ssh/rc"
+-'  1  3  ~/.ssh/rc
+|4,39,1,3,1783821018,"~/.ssh/rc"
+-'  1  3  ~/.ssh/rc
+|4,39,1,3,1783821018,"~/.ssh/rc"
+-'  1  3  ~/.ssh/rc
+|4,39,1,3,1783821018,"~/.ssh/rc"
+-'  1  3  ~/.ssh/rc
+|4,39,1,3,1783821018,"~/.ssh/rc"
+-'  1  3  ~/.ssh/rc
+|4,39,1,3,1783821018,"~/.ssh/rc"
+-'  1  3  ~/.ssh/rc
+|4,39,1,3,1783821018,"~/.ssh/rc"
+-'  1  3  ~/.ssh/rc
+|4,39,1,3,1783821018,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783820822,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783820822,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783820822,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783820822,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783820822,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783820822,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783820822,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783820822,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783820773,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783820773,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783820773,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783820773,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783820773,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783820773,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783820773,"~/.ssh/rc"
+-'  1  0  ~/.ssh/rc
+|4,39,1,0,1783820773,"~/.ssh/rc"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
+-'  1  35  ~/.ssh/authorized_keys
+|4,39,1,35,1783820342,"~/.ssh/authorized_keys"
 
 # History of marks within files (newest to oldest):
 
-> /data/data/com.termux/files/usr/bin/am
-	*	1782970196	0
-	"	30	0
-
-> ~/testFile
-	*	1782966961	0
-	"	1	0
-
-> ~/#termux-url-opener#
-	*	1782966592	0
-	"	8	0
-
-> ~/Tchrome.csh
-	*	1782965886	0
-	"	8	1
-	^	1	0
-	.	1	0
-	+	1	0
-	+	3	23
-	+	4	0
-	+	1	0
-	+	2	0
-	+	3	0
-	+	4	0
-	+	5	0
-	+	6	0
-	+	7	0
-	+	8	0
-	+	10	0
-	+	11	0
-	+	12	0
-	+	1	0
-	+	1	44
-	+	10	0
-	+	7	0
-	+	6	0
-	+	5	0
-	+	4	0
-	+	3	0
-	+	2	0
-	+	1	0
-	+	1	1
-	+	10	0
-	+	11	0
-	+	12	0
-	+	10	0
-	+	8	0
-	+	1	0
-	+	8	0
-	+	10	0
-	+	4	6
-	+	10	7
-	+	12	65
-	+	10	14
-	+	8	15
-	+	1	0
-	+	10	0
-	+	9	0
-	+	1	0
-	+	12	66
-	+	1	0
-
 > /data/data/com.termux/files/usr/tmp/erl_tmp
-	*	1782965884	0
+	*	1784508156	0
 	"	1	0
-	^	1	78
-	.	2	0
+	.	1	0
 	+	1	33
 	+	1	34
 	+	1	32
-	+	200	38
+	+	205	38
 	+	1	9
 	+	1	4
 	+	1	0
@@ -4609,34 +4546,32 @@ $
 	+	1	0
 	+	1	118
 	+	1	39
-	+	12	37
-	+	13	39
+	+	17	37
+	+	18	39
 	+	1	39
-	+	10	37
-	+	11	40
+	+	15	37
+	+	16	40
 	+	1	39
-	+	8	37
-	+	9	39
+	+	13	37
+	+	14	39
 	+	1	40
 	+	1	78
-	+	4	0
+	+	9	0
 	+	1	39
-	+	2	37
-	+	3	39
+	+	7	37
+	+	8	39
 	+	1	40
 	+	1	78
-	+	2	0
+	+	7	0
+	+	1	0
+	+	3	0
+	+	1	0
 
 > ~/4thTwitchWhite.ascii
-	*	1782965882	0
-	"	1116	0
-	^	978	0
-	.	1119	0
-	+	1	32
-	+	1	34
-	+	1	35
-	+	1	30
-	+	1	35
+	*	1784508127	0
+	"	1168	0
+	^	1	0
+	.	1146	0
 	+	1	34
 	+	1	35
 	+	1	37
@@ -4655,182 +4590,213 @@ $
 	+	1	33
 	+	1	30
 	+	1	0
-	+	656	0
-	+	703	0
-	+	788	0
-	+	814	0
-	+	801	0
-	+	818	0
-	+	831	0
-	+	401	0
-	+	404	0
-	+	438	0
-	+	450	0
-	+	499	0
-	+	505	0
+	+	655	0
+	+	702	0
+	+	787	0
+	+	813	0
+	+	800	0
+	+	817	0
+	+	830	0
+	+	400	0
+	+	403	0
+	+	437	0
+	+	449	0
+	+	498	0
+	+	504	0
+	+	527	0
 	+	528	0
 	+	529	0
-	+	530	0
-	+	536	0
-	+	546	0
-	+	548	0
-	+	552	0
-	+	560	0
-	+	572	0
+	+	535	0
+	+	545	0
+	+	547	0
+	+	551	0
+	+	559	0
+	+	571	0
+	+	575	0
 	+	576	0
-	+	577	0
-	+	579	0
-	+	581	0
-	+	610	0
-	+	612	0
-	+	622	0
-	+	625	0
-	+	629	0
-	+	636	0
-	+	649	0
-	+	663	0
+	+	578	0
+	+	580	0
+	+	609	0
+	+	611	0
+	+	621	0
+	+	624	0
+	+	628	0
+	+	635	0
+	+	648	0
+	+	662	0
+	+	664	0
 	+	665	0
 	+	666	0
-	+	667	0
-	+	691	0
+	+	690	0
+	+	741	0
 	+	742	0
-	+	743	0
-	+	793	0
-	+	380	0
-	+	457	0
-	+	515	0
-	+	517	0
-	+	524	0
-	+	526	0
-	+	538	0
-	+	561	0
-	+	768	0
-	+	771	0
-	+	775	0
-	+	838	0
-	+	835	0
-	+	905	0
-	+	908	32
-	+	909	0
-	+	936	0
-	+	944	0
-	+	936	0
-	+	958	0
+	+	792	0
+	+	379	0
+	+	456	0
+	+	514	0
+	+	516	0
+	+	523	0
+	+	525	0
+	+	537	0
+	+	560	0
+	+	767	0
+	+	770	0
+	+	774	0
+	+	837	0
+	+	834	0
+	+	904	0
+	+	907	32
+	+	908	0
+	+	935	0
+	+	943	0
+	+	935	0
+	+	957	0
+	+	969	0
 	+	970	0
-	+	971	0
-	+	974	0
-	+	979	0
-	+	971	0
 	+	973	0
-	+	977	0
+	+	978	0
+	+	970	0
+	+	972	0
+	+	976	0
+	+	1010	0
 	+	1011	0
-	+	1012	0
+	+	1034	0
 	+	1035	0
-	+	1036	0
-	+	1055	0
-	+	457	0
-	+	1109	0
-	+	1116	0
+	+	1054	0
+	+	456	0
+	+	1108	0
+	+	1115	0
+	+	1118	0
+	+	1120	0
+	+	2	0
+	+	1	0
+	+	300	0
+	+	1146	0
+
+> ~/.ssh/known_hosts
+	*	1783833807	0
+	"	3	0
+
+> ~/1stTwitchRed.ascii
+	*	1783830886	0
+	"	1350	0
+	.	1350	0
+	+	1963	0
+	+	3977	33
+	+	1963	0
+	+	1929	0
+	+	1476	0
+	+	1	0
+	+	1964	35
+	+	1965	31
+	+	76	0
+	+	104	0
+	+	1966	35
+	+	1967	35
+	+	1975	0
+	+	1967	40
+	+	1974	37
+	+	1911	0
+	+	1704	0
+	+	1968	33
+	+	1969	38
+	+	1974	0
+	+	1969	38
+	+	1970	32
+	+	1974	0
+	+	1970	32
+	+	1974	0
+	+	1124	0
+	+	1972	35
+	+	1970	32
+	+	1971	43
+	+	809	0
+	+	1894	0
 	+	1119	0
+	+	1477	0
+	+	1375	0
+	+	1853	0
+	+	1365	0
+	+	912	0
+	+	747	0
+	+	1580	0
+	+	1535	0
+	+	1911	0
+	+	1865	0
+	+	1227	0
+	+	1637	0
+	+	1227	0
+	+	1469	0
+	+	144	0
+	+	674	0
+	+	1678	0
+	+	880	0
+	+	1656	0
+	+	1271	0
+	+	880	0
+	+	1596	0
+	+	1715	0
+	+	1483	0
+	+	1083	0
+	+	1506	0
+	+	1028	0
+	+	1142	0
+	+	19	0
+	+	1535	0
+	+	1630	0
+	+	1783	0
+	+	1055	0
+	+	227	0
+	+	426	0
+	+	1222	0
+	+	1774	0
+	+	1828	0
+	+	1117	0
+	+	1397	0
+	+	603	0
+	+	1637	0
+	+	1972	36
+	+	1973	0
+	+	1974	0
+	+	1971	36
+	+	1971	0
+	+	1448	39
+	+	1448	0
+	+	1982	34
+	+	1783	0
+	+	1985	0
+	+	1983	0
+	+	1985	0
+	+	1983	33
+	+	1984	0
+	+	1985	0
+	+	1380	0
+	+	713	0
+	+	1350	0
 
-> ~/chrome.txt
-	*	1782963124	0
+> ~/.ssh/rc
+	*	1783821083	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.ssh/authorized_keys
+	*	1783820333	0
+	"	1	35
+	^	1	36
+	.	1	35
+	+	1	35
+
+> ~/.ssh/id_rsa.pub
+	*	1783818969	0
 	"	1	0
 
-> /data/data/com.termux/files/usr/etc/csh.cshrc
-	*	1782962779	0
-	"	1	0
-
-> ~/.cshrc
-	*	1782962622	0
-	"	1	0
-	^	2	15
-	.	2	14
-	+	11	6
-	+	1	82
-	+	11	0
-	+	11	24
-	+	11	6
-	+	11	0
-	+	11	6
-	+	1	12
-	+	11	15
-	+	11	0
-	+	11	14
-	+	1	27
-	+	11	0
-	+	1	0
-	+	1	15
-	+	1	74
-	+	1	0
-	+	11	74
-	+	1	0
-	+	1	15
-	+	1	74
-	+	1	0
-	+	1	15
-	+	1	74
-	+	1	0
-	+	1	82
-	+	11	35
-	+	1	34
-	+	11	34
-	+	1	97
-	+	1	0
-	+	11	0
-	+	1	0
-	+	11	0
-	+	1	17
-	+	1	83
-	+	1	77
-	+	11	0
-	+	1	18
-	+	11	0
-	+	9	25
-	+	4	15
-	+	3	21
-	+	4	14
-	+	6	10
-	+	9	0
-	+	7	11
-	+	8	10
-	+	1	19
-	+	3	22
-	+	4	15
-	+	4	17
-	+	5	14
-	+	6	11
-	+	7	12
-	+	8	12
-	+	9	27
-	+	10	8
-	+	11	8
-	+	1	18
-	+	3	21
-	+	4	16
-	+	5	13
-	+	6	10
-	+	7	11
-	+	8	11
-	+	9	26
-	+	10	7
-	+	11	7
-	+	3	0
-	+	4	0
-	+	5	0
-	+	6	0
-	+	7	0
-	+	8	1
-	+	3	0
-	+	4	0
-	+	5	0
-	+	6	0
-	+	7	0
-	+	8	0
-	+	2	14
+> ~/.ssh/id_rsa
+	*	1783818199	0
+	"	49	0
 
 > ~/.login
-	*	1782962590	0
+	*	1783752082	0
 	"	1	0
 	^	3	0
 	.	1	0
@@ -4935,205 +4901,282 @@ $
 	+	3	0
 	+	1	0
 
-> ~/1stTwitchRed.ascii
-	*	1782885372	0
-	"	1986	34
-	^	1986	9
-	.	1986	34
-	+	1967	0
-	+	3979	33
-	+	1967	0
-	+	1933	0
-	+	1479	0
+> ~/.cshrc
+	*	1783752068	0
+	"	1	0
+	^	2	15
+	.	2	14
+	+	11	6
+	+	1	82
+	+	11	0
+	+	11	24
+	+	11	6
+	+	11	0
+	+	11	6
+	+	1	12
+	+	11	15
+	+	11	0
+	+	11	14
+	+	1	27
+	+	11	0
 	+	1	0
-	+	1968	35
-	+	1969	31
-	+	76	0
-	+	104	0
-	+	1970	35
-	+	1971	35
-	+	1979	0
-	+	1971	40
-	+	1978	37
-	+	1915	0
-	+	1707	0
-	+	1972	33
-	+	1973	38
-	+	1978	0
-	+	1973	38
-	+	1974	32
-	+	1978	0
-	+	1974	32
-	+	1978	0
-	+	1125	0
-	+	1976	35
-	+	1974	32
-	+	1975	43
-	+	810	0
-	+	1898	0
-	+	1120	0
-	+	1480	0
-	+	1377	0
-	+	1857	0
-	+	1367	0
-	+	913	0
-	+	748	0
-	+	1583	0
-	+	1538	0
-	+	1915	0
-	+	1869	0
-	+	1228	0
-	+	1640	0
-	+	1228	0
-	+	1472	0
-	+	144	0
-	+	674	0
-	+	1681	0
-	+	881	0
-	+	1659	0
-	+	1272	0
-	+	881	0
-	+	1599	0
-	+	1718	0
-	+	1486	0
-	+	1084	0
-	+	1509	0
-	+	1029	0
-	+	1143	0
-	+	19	0
-	+	1538	0
-	+	1633	0
-	+	1787	0
-	+	1056	0
-	+	227	0
-	+	426	0
-	+	1223	0
-	+	1777	0
-	+	1832	0
-	+	1118	0
-	+	1400	0
-	+	603	0
-	+	1640	0
-	+	1976	36
-	+	1977	0
-	+	1978	0
-	+	1975	36
-	+	1975	0
-	+	1451	39
-	+	1451	0
-	+	1986	34
-
-> ~/bin/termux-url-opener
-	*	1782693710	0
-	"	2	10
-	^	2	11
-	.	2	10
-	+	19	0
-	+	19	29
-	+	19	16
-	+	19	14
-	+	19	27
-	+	19	0
-	+	19	28
-	+	16	6
-	+	16	0
-	+	17	44
-	+	20	8
-	+	25	8
-	+	30	8
-	+	35	8
-	+	40	8
-	+	45	9
-	+	50	8
-	+	55	9
-	+	60	8
-	+	65	9
-	+	70	8
-	+	75	9
-	+	75	0
-	+	20	6
-	+	25	6
-	+	30	6
-	+	35	6
-	+	40	6
-	+	45	6
-	+	50	6
-	+	55	6
-	+	60	6
-	+	65	6
-	+	70	6
-	+	75	6
-	+	94	14
-	+	19	0
-	+	93	64
-	+	91	4
-	+	22	76
-	+	27	79
-	+	32	78
-	+	37	78
-	+	42	76
-	+	47	77
-	+	52	79
-	+	57	80
-	+	62	78
-	+	67	79
-	+	72	78
-	+	77	78
-	+	22	76
-	+	27	79
-	+	32	78
-	+	37	78
-	+	42	76
-	+	47	77
-	+	52	79
-	+	57	80
-	+	62	78
-	+	67	79
-	+	72	78
-	+	77	78
+	+	1	15
+	+	1	74
+	+	1	0
+	+	11	74
+	+	1	0
+	+	1	15
+	+	1	74
+	+	1	0
+	+	1	15
+	+	1	74
+	+	1	0
+	+	1	82
+	+	11	35
+	+	1	34
+	+	11	34
+	+	1	97
+	+	1	0
+	+	11	0
+	+	1	0
+	+	11	0
+	+	1	17
+	+	1	83
+	+	1	77
+	+	11	0
+	+	1	18
+	+	11	0
+	+	9	25
+	+	4	15
+	+	3	21
+	+	4	14
+	+	6	10
+	+	9	0
+	+	7	11
+	+	8	10
+	+	1	19
+	+	3	22
+	+	4	15
+	+	4	17
 	+	5	14
-	+	6	12
+	+	6	11
+	+	7	12
+	+	8	12
+	+	9	27
+	+	10	8
+	+	11	8
+	+	1	18
+	+	3	21
+	+	4	16
+	+	5	13
+	+	6	10
+	+	7	11
+	+	8	11
+	+	9	26
+	+	10	7
+	+	11	7
+	+	3	0
 	+	4	0
-	+	17	111
-	+	18	604
-	+	18	6
-	+	18	613
-	+	19	112
-	+	19	14
-	+	13	0
-	+	85	0
-	+	89	0
-	+	90	0
-	+	94	0
-	+	19	0
-	+	83	14
-	+	86	14
-	+	87	14
-	+	83	14
-	+	86	14
-	+	87	14
-	+	23	49
-	+	28	2
-	+	33	2
-	+	38	2
-	+	43	15
-	+	48	15
-	+	53	15
-	+	58	15
-	+	63	15
-	+	68	15
-	+	73	15
-	+	78	15
-	+	95	29
-	+	6	12
-	+	1	88
-	+	2	10
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	1
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	2	14
+
+> ~/.emacs.d/.emacs.desktop
+	*	1783584101	0
+	"	10	1175
+
+> ~/.config/doom/init.el
+	*	1783378580	0
+	"	1	35
+	^	1	36
+	.	1	32
+	+	1	32
+
+> /data/data/com.termux/files/usr/libexec/emacs/30.2/aarch64-linux-android/emacs.pdmp
+	*	1783213213	0
+	"	1	0
+
+> /storage/emulated/0/Download/(99+) Twitch.bin
+	*	1783115394	0
+	"	1	0
+
+> ~/2ndTwitchViolet.ascii
+	*	1783115370	0
+	"	1	0
+	^	1927	9
+	.	614	0
+	+	1122	0
+	+	461	0
+	+	1533	0
+	+	564	0
+	+	1531	0
+	+	1509	0
+	+	1082	0
+	+	727	0
+	+	501	0
+	+	1055	0
+	+	1519	0
+	+	1022	0
+	+	1000	0
+	+	1573	0
+	+	1017	0
+	+	1020	0
+	+	1001	0
+	+	655	0
+	+	1041	0
+	+	1053	0
+	+	485	0
+	+	1734	0
+	+	1793	0
+	+	1795	0
+	+	1022	0
+	+	997	0
+	+	1796	0
+	+	1051	0
+	+	1008	0
+	+	1015	0
+	+	1081	0
+	+	540	0
+	+	1552	0
+	+	1556	0
+	+	1055	0
+	+	1082	0
+	+	1046	0
+	+	1016	0
+	+	1082	0
+	+	1026	0
+	+	15	0
+	+	1776	0
+	+	912	0
+	+	651	0
+	+	891	0
+	+	1016	0
+	+	1022	0
+	+	1764	0
+	+	1795	0
+	+	997	0
+	+	651	0
+	+	1000	0
+	+	653	0
+	+	1053	0
+	+	798	0
+	+	1795	0
+	+	313	0
+	+	332	0
+	+	1082	0
+	+	1542	0
+	+	1022	0
+	+	1758	0
+	+	414	0
+	+	1547	0
+	+	1043	0
+	+	1747	0
+	+	428	0
+	+	914	0
+	+	1761	0
+	+	1043	0
+	+	651	0
+	+	16	0
+	+	458	0
+	+	258	0
+	+	11	0
+	+	7	0
+	+	763	0
+	+	1833	0
+	+	1835	0
+	+	1845	0
+	+	1853	0
+	+	1869	0
+	+	1875	0
+	+	1893	0
+	+	1914	0
+	+	1971	0
+	+	1981	0
+	+	1982	0
+	+	2003	0
+	+	1927	34
+	+	1969	36
+	+	1714	0
+	+	420	0
+	+	1969	8
+	+	1927	8
+	+	1928	0
+	+	76	0
+	+	1790	0
+	+	1006	0
+	+	614	0
+
+> /data/data/com.termux/files/usr/share/vim/vim92/doc/help.txt
+	*	1783115363	0
+	"	1	0
+
+> ~/Tchrome.csh
+	*	1783049720	0
+	"	1	1
+	^	1	0
+	.	1	0
+	+	1	0
+	+	3	23
+	+	4	0
+	+	1	0
+	+	2	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	1	0
+	+	1	44
+	+	10	0
+	+	7	0
+	+	6	0
+	+	5	0
+	+	4	0
+	+	3	0
+	+	2	0
+	+	1	0
+	+	1	1
+	+	10	0
+	+	11	0
+	+	12	0
+	+	10	0
+	+	8	0
+	+	1	0
+	+	8	0
+	+	10	0
+	+	4	6
+	+	10	7
+	+	12	65
+	+	10	14
+	+	8	15
+	+	1	0
+	+	10	0
+	+	9	0
+	+	1	0
+	+	12	66
+	+	1	0
+
+> /data/data/com.termux/files/usr/etc/csh.cshrc
+	*	1783049422	0
+	"	1	0
 
 > ~/bin/termux-file-editor
-	*	1782693563	0
-	"	3	10
-	^	3	11
-	.	3	10
+	*	1783049344	0
+	"	45	0
+	^	3	1
+	.	3	0
 	+	17	0
 	+	44	9
 	+	22	0
@@ -5233,7 +5276,133 @@ $
 	+	1	0
 	+	1	88
 	+	2	0
-	+	3	10
+	+	3	0
+
+> ~/bin/termux-url-opener
+	*	1782985927	0
+	"	1	0
+	^	2	1
+	.	2	0
+	+	19	0
+	+	19	29
+	+	19	16
+	+	19	14
+	+	19	27
+	+	19	0
+	+	19	28
+	+	16	6
+	+	16	0
+	+	17	44
+	+	20	8
+	+	25	8
+	+	30	8
+	+	35	8
+	+	40	8
+	+	45	9
+	+	50	8
+	+	55	9
+	+	60	8
+	+	65	9
+	+	70	8
+	+	75	9
+	+	75	0
+	+	20	6
+	+	25	6
+	+	30	6
+	+	35	6
+	+	40	6
+	+	45	6
+	+	50	6
+	+	55	6
+	+	60	6
+	+	65	6
+	+	70	6
+	+	75	6
+	+	94	14
+	+	19	0
+	+	93	64
+	+	91	4
+	+	22	76
+	+	27	79
+	+	32	78
+	+	37	78
+	+	42	76
+	+	47	77
+	+	52	79
+	+	57	80
+	+	62	78
+	+	67	79
+	+	72	78
+	+	77	78
+	+	22	76
+	+	27	79
+	+	32	78
+	+	37	78
+	+	42	76
+	+	47	77
+	+	52	79
+	+	57	80
+	+	62	78
+	+	67	79
+	+	72	78
+	+	77	78
+	+	5	14
+	+	6	12
+	+	4	0
+	+	17	111
+	+	18	604
+	+	18	6
+	+	18	613
+	+	19	112
+	+	19	14
+	+	13	0
+	+	85	0
+	+	89	0
+	+	90	0
+	+	94	0
+	+	19	0
+	+	83	14
+	+	86	14
+	+	87	14
+	+	83	14
+	+	86	14
+	+	87	14
+	+	23	49
+	+	28	2
+	+	33	2
+	+	38	2
+	+	43	15
+	+	48	15
+	+	53	15
+	+	58	15
+	+	63	15
+	+	68	15
+	+	73	15
+	+	78	15
+	+	95	29
+	+	6	12
+	+	1	88
+	+	2	0
+
+> ~/tFile.txt
+	*	1782978455	0
+	"	1	0
+
+> /data/data/com.termux/files/usr/bin/am
+	*	1782970196	0
+	"	30	0
+
+> ~/testFile
+	*	1782966961	0
+	"	1	0
+
+> ~/#termux-url-opener#
+	*	1782966592	0
+	"	8	0
+
+> ~/chrome.txt
+	*	1782963124	0
+	"	1	0
 
 > ~/.histfile.3874877
 	*	1782256117	0
@@ -5769,112 +5938,6 @@ $
 	+	1304	29
 	+	1830	0
 
-> ~/2ndTwitchViolet.ascii
-	*	1779392403	0
-	"	1610	29
-	^	1927	9
-	.	614	0
-	+	1122	0
-	+	461	0
-	+	1533	0
-	+	564	0
-	+	1531	0
-	+	1509	0
-	+	1082	0
-	+	727	0
-	+	501	0
-	+	1055	0
-	+	1519	0
-	+	1022	0
-	+	1000	0
-	+	1573	0
-	+	1017	0
-	+	1020	0
-	+	1001	0
-	+	655	0
-	+	1041	0
-	+	1053	0
-	+	485	0
-	+	1734	0
-	+	1793	0
-	+	1795	0
-	+	1022	0
-	+	997	0
-	+	1796	0
-	+	1051	0
-	+	1008	0
-	+	1015	0
-	+	1081	0
-	+	540	0
-	+	1552	0
-	+	1556	0
-	+	1055	0
-	+	1082	0
-	+	1046	0
-	+	1016	0
-	+	1082	0
-	+	1026	0
-	+	15	0
-	+	1776	0
-	+	912	0
-	+	651	0
-	+	891	0
-	+	1016	0
-	+	1022	0
-	+	1764	0
-	+	1795	0
-	+	997	0
-	+	651	0
-	+	1000	0
-	+	653	0
-	+	1053	0
-	+	798	0
-	+	1795	0
-	+	313	0
-	+	332	0
-	+	1082	0
-	+	1542	0
-	+	1022	0
-	+	1758	0
-	+	414	0
-	+	1547	0
-	+	1043	0
-	+	1747	0
-	+	428	0
-	+	914	0
-	+	1761	0
-	+	1043	0
-	+	651	0
-	+	16	0
-	+	458	0
-	+	258	0
-	+	11	0
-	+	7	0
-	+	763	0
-	+	1833	0
-	+	1835	0
-	+	1845	0
-	+	1853	0
-	+	1869	0
-	+	1875	0
-	+	1893	0
-	+	1914	0
-	+	1971	0
-	+	1981	0
-	+	1982	0
-	+	2003	0
-	+	1927	34
-	+	1969	36
-	+	1714	0
-	+	420	0
-	+	1969	8
-	+	1927	8
-	+	1928	0
-	+	76	0
-	+	1790	0
-	+	1006	0
-	+	614	0
-
 > ~/lightGrey.csh
 	*	1779338881	0
 	"	1	0
@@ -6112,126 +6175,3 @@ $
 	+	1	3
 	+	1	0
 	+	2	0
-
-> ~/twitchDuplicateCheck.csh
-	*	1777811782	0
-	"	80	0
-	.	27	0
-	+	64	7
-	+	64	14
-	+	64	30
-	+	64	10
-	+	9	34
-	+	9	68
-	+	9	36
-	+	9	2
-	+	9	33
-	+	9	2
-	+	9	7
-	+	9	36
-	+	45	33
-	+	64	28
-	+	9	10
-	+	9	33
-	+	9	2
-	+	9	34
-	+	9	5
-	+	9	2
-	+	9	34
-	+	9	5
-	+	9	2
-	+	9	37
-	+	9	5
-	+	9	37
-	+	9	8
-	+	9	5
-	+	9	37
-	+	9	8
-	+	9	5
-	+	45	2
-	+	45	34
-	+	45	2
-	+	45	34
-	+	45	2
-	+	45	34
-	+	45	5
-	+	45	2
-	+	64	0
-	+	64	32
-	+	64	29
-	+	64	0
-	+	64	32
-	+	64	3
-	+	64	0
-	+	64	32
-	+	64	3
-	+	64	0
-	+	9	5
-	+	9	2
-	+	45	2
-	+	64	0
-	+	9	11
-	+	9	2
-	+	9	11
-	+	9	5
-	+	9	14
-	+	45	2
-	+	45	11
-	+	64	0
-	+	64	9
-	+	9	8
-	+	9	11
-	+	45	8
-	+	64	6
-	+	64	3
-	+	45	0
-	+	1	9
-	+	5	0
-	+	1	9
-	+	5	0
-	+	45	0
-	+	9	2
-	+	7	0
-	+	63	0
-	+	9	0
-	+	27	0
-
-> /data/data/com.termux/files/usr/share/vim/vim92/doc/usr_04.txt
-	*	1777807741	0
-	"	77	0
-
-> /data/data/com.termux/files/usr/share/vim/vim92/doc/pattern.txt
-	*	1777601880	0
-	"	1505	24
-
-> /data/data/com.termux/files/usr/share/vim/vim92/doc/popup.txt
-	*	1777601132	0
-	"	388	25
-
-> /data/data/com.termux/files/usr/share/vim/vim92/doc/tagsrch.txt
-	*	1777600940	0
-	"	119	12
-
-> /data/data/com.termux/files/usr/share/vim/vim92/doc/eval.txt
-	*	1777600733	0
-	"	3108	29
-
-> ~/dn4.csh
-	*	1777594680	0
-	"	1	0
-
-> ~/$3dn4
-	*	1777594631	0
-	"	1	0
-
-> ~/dn4
-	*	1777594614	0
-	"	1	0
-
-> ~/lor
-	*	1777594098	0
-	"	183	0
-
-> ~/init.csh
-	*	1777594028	0
-	"	1	0

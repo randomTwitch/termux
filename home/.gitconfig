@@ -5,7 +5,12 @@
 	helper = 
 	helper = !/data/data/com.termux/files/usr/bin/gh auth git-credential
 [user]
-	email = hitman47474@hotmail.com
+	email = alexanadupu@bmail.ag
 	name = randomTwitch
+	signingkey = B229EF81F81ADC2D
 [push]
 	autoSetupRemote = true
+[pull]
+	rebase = true
+[commit]
+	gpgsign = true

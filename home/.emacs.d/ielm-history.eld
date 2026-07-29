@@ -32,3 +32,4 @@ sf (1)
 (let s . (sf()))
 exit
 quit
+(buffer-hash (get-buffer "Tchrome.csh"))

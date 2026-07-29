@@ -6,7 +6,15 @@
  ;; If there is more than one, they won't work right.
  '(desktop-auto-save-timeout 360)
  '(desktop-save-mode t)
- '(menu-bar-mode nil))
+ '(menu-bar-mode nil)
+ '(package-archives
+   '(("gnu" . "https://elpa.gnu.org/packages/")
+     ("nongnu" . "https://elpa.nongnu.org/nongnu/")
+     ("melpa" . "https://melpa.org/packages/")
+     ("melpa-stable" . "https://stable.melpa.org/packages/")
+     ("melpa-devel" . "https://melpa.org/packages/")
+     ("gnu-devel" . "https://elpa.gnu.org/devel/")))
+ '(package-selected-packages nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
