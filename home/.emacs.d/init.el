@@ -14,7 +14,8 @@
      ("melpa-stable" . "https://stable.melpa.org/packages/")
      ("melpa-devel" . "https://melpa.org/packages/")
      ("gnu-devel" . "https://elpa.gnu.org/devel/")))
- '(package-selected-packages nil))
+ '(package-selected-packages nil)
+ '(tab-bar-format '(tab-bar-format-tabs tab-bar-format-align-right)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

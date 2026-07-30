@@ -165,13 +165,13 @@
       (:url . "https://elpa.gnu.org/packages/assess.html")
       (:commit . "cadeb24a5d8261fad4bdfdc09e7d571cc395a6ca"))])
  (async
-  . [(1 9 9 0 20260318 110333) ((emacs (24 4)))
+  . [(1 9 9 0 20260729 33) ((emacs (24 4)))
      "Asynchronous processing in Emacs" tar
      ((:url . "https://github.com/jwiegley/emacs-async")
       (:keywords "async")
       (:maintainer "Thierry Volpiatto" . "thievol@posteo.net")
       (:authors ("John Wiegley" . "jwiegley@gmail.com"))
-      (:commit . "5faab28916603bb324d9faba057021ce028ca847"))])
+      (:commit . "4fdcb061a166e0d6ccc27d3829a28e04415ae825"))])
  (auctex
   . [(14 1 2 0 20260727 50) ((emacs (28 1)))
      "Integrated environment for *TeX*" tar
@@ -744,13 +744,13 @@
       (:url . "https://elpa.gnu.org/packages/dbus-codegen.html")
       (:commit . "04114e4cbc8f422e6b77cfc202d1109c96316117"))])
  (debbugs
-  . [(0 46 0 20260222 93040) ((emacs (26 1)) (soap-client (3 1 5)))
+  . [(0 47 0 20260730 0) ((emacs (26 1)) (soap-client (3 1 5)))
      "SOAP library to access debbugs servers" tar
      ((:keywords "comm" "hypermedia")
       (:maintainer "Michael Albinus" . "michael.albinus@gmx.de")
       (:authors ("Michael Albinus" . "michael.albinus@gmx.de"))
       (:url . "https://elpa.gnu.org/packages/debbugs.html")
-      (:commit . "b8b8dfc65dea9bfdd370b8f84e3883974a044a2b"))])
+      (:commit . "a9ab46cddf1e51acfd02186cbf8610d978113206"))])
  (delight
   . [(1 7 0 20200711 42851) ((cl-lib (0 5)) (nadvice (0 3)))
      "A dimmer switch for your lighter text" tar
@@ -760,12 +760,12 @@
       (:authors ("Phil Sainty" . "psainty@orcon.net.nz"))
       (:commit . "5a0cd5ccb650d7bba1c1ea02cf67b71d7cfa6e9a"))])
  (denote
-  . [(4 2 3 0 20260727 8) ((emacs (28 1)))
+  . [(4 2 3 0 20260729 11) ((emacs (28 1)))
      "Simple notes with an efficient file-naming scheme" tar
      ((:url . "https://github.com/protesilaos/denote")
       (:maintainer "Protesilaos" . "info@protesilaos.com")
       (:authors ("Protesilaos" . "info@protesilaos.com"))
-      (:commit . "c8aa01c56a94575e7187151c0c9bfc8868022cda"))])
+      (:commit . "3718a603056985c0832705d4f41eea944ed5031e"))])
  (denote-journal
   . [(0 3 0 0 20260520 123338) ((emacs (28 1)) (denote (4 0 0)))
      "Convenience functions for daily journaling with Denote" tar
@@ -924,6 +924,14 @@
       (:maintainer "Protesilaos" . "info@protesilaos.com")
       (:authors ("Protesilaos" . "info@protesilaos.com"))
       (:commit . "090eded80f801cb4f651490cdd9a78910ef63946"))])
+ (dired-sidebar
+  . [(2 0 1 0 20260729 1) ((emacs (29 1)) (compat (30 0 0 0)))
+     "Tree browser leveraging dired" tar
+     ((:url . "https://github.com/jojojames/dired-sidebar")
+      (:keywords "dired" "files" "tools")
+      (:maintainer "James Nguyen" . "james@jojojames.com")
+      (:authors ("James Nguyen" . "james@jojojames.com"))
+      (:commit . "c97d0710450453170b6d850dc94ea80db17a96d7"))])
  (disk-usage
   . [(1 3 3 0 20230920 164444) ((emacs (26 1)))
      "Sort and browse disk usage listings" tar
@@ -995,13 +1003,13 @@
       (:url . "https://elpa.gnu.org/packages/docbook.html")
       (:commit . "9b7c2dbae38b523442f7c1155bc4e3db16a0c49f"))])
  (doric-themes
-  . [(1 2 1 0 20260724 12) ((emacs (29 1)))
+  . [(1 2 1 0 20260730 13) ((emacs (29 1)))
      "Highly legible minimalist themes with precise typography" tar
      ((:url . "https://github.com/protesilaos/doric-themes")
       (:keywords "faces" "theme" "accessibility")
       (:maintainer "Protesilaos" . "info@protesilaos.com")
       (:authors ("Protesilaos" . "info@protesilaos.com"))
-      (:commit . "36ba80c7ee2bcefd0dc8800929fa7a2d179f0bc4"))])
+      (:commit . "5ccb35aea3806eabdd9cc8ec3fd013618c836ced"))])
  (drepl
   . [(0 4 0 20260715 8) ((emacs (29 1)) (comint-mime (0 7)))
      "REPL protocol for the dumb terminal" tar
@@ -1683,7 +1691,7 @@
       (:authors ("Oleh Krehel" . "ohwoeowho@gmail.com"))
       (:commit . "84a9db01eff1fcc52ad054c5ad3c22316739573f"))])
  (hyperbole
-  . [(9 1 0 0 20260727 2) ((emacs (28)))
+  . [(9 1 0 0 20260730 7) ((emacs (28)))
      "GNU Hyperbole: The Everyday Hypertextual Information Manager"
      tar
      ((:url . "http://www.gnu.org/software/hyperbole")
@@ -1693,7 +1701,7 @@
       (:maintainer ("Robert Weiner" . "rsw@gnu.org")
 		   ("Mats Lidell" . "matsl@gnu.org"))
       (:authors ("Robert Weiner" . "rsw@gnu.org"))
-      (:commit . "89755af46aace89d2f2ab7c47ef48b4131d1fd08"))])
+      (:commit . "229f38ee94a8a9112d97564556049f039d684eb2"))])
  (ibuffer-sidebar
   . [(1 0 0 0 20260718 2) ((emacs (29 1))) "Sidebar for `ibuffer'" tar
      ((:url . "https://github.com/jojojames/ibuffer-sidebar")
@@ -1839,13 +1847,13 @@
       (:url . "https://elpa.gnu.org/packages/jgraph-mode.html")
       (:commit . "1bd355ecda036f23468d82b803146d3258a84977"))])
  (jinx
-  . [(2 8 0 20260628 1) ((emacs (29 1)) (compat (31)))
+  . [(2 8 0 20260729 11) ((emacs (29 1)) (compat (31)))
      "Enchanted Spell Checker" tar
      ((:url . "https://github.com/minad/jinx")
       (:keywords "convenience" "text")
       (:maintainer "Daniel Mendler" . "mail@daniel-mendler.de")
       (:authors ("Daniel Mendler" . "mail@daniel-mendler.de"))
-      (:commit . "80b3618d401a654137a48be7d4f90b67cad92748"))])
+      (:commit . "ab922067c58ef88ae69d1c288c35202c5fef2c55"))])
  (jit-spell
   . [(0 5 0 20251012 84654) ((emacs (27 1)) (compat (29 1)))
      "Just-in-time spell checking" tar
@@ -2224,13 +2232,12 @@
       (:url . "https://elpa.gnu.org/packages/minimap.html")
       (:commit . "b295cab07c1932c11dd00f23ba29c1ff0de486ab"))])
  (minuet
-  . [(0 8 0 0 20260518 211153)
-     ((emacs (29)) (plz (0 9)) (dash (2 19 1)))
+  . [(0 8 0 0 20260730 1) ((emacs (29)) (plz (0 9)) (dash (2 19 1)))
      "Code completion using LLM" tar
      ((:url . "https://github.com/milanglacier/minuet-ai.el")
       (:maintainer "Milan Glacier" . "dev@milanglacier.com")
       (:authors ("Milan Glacier" . "dev@milanglacier.com"))
-      (:commit . "13fb314a795951b9190c53c59ef281abf7a2cb4f"))])
+      (:commit . "68381b4a041170bf6ab727806bd59194fd8760f6"))])
  (mmm-mode
   . [(0 5 11 0 20240222 42825) ((emacs (25 1)) (cl-lib (0 2)))
      "Allow Multiple Major Modes in a buffer" tar
@@ -2247,13 +2254,13 @@
       (:maintainer "Nicolas P. Rougier" . "Nicolas.Rougier@inria.fr")
       (:commit . "dc0bd20750f34340448ba1c7be4ed2b62af0f78c"))])
  (modus-themes
-  . [(5 3 0 0 20260722 27) ((emacs (28 1)))
+  . [(5 3 0 0 20260730 29) ((emacs (28 1)))
      "Elegant, highly legible and customizable themes" tar
      ((:url . "https://github.com/protesilaos/modus-themes")
       (:keywords "faces" "theme" "accessibility")
       (:maintainer "Protesilaos" . "info@protesilaos.com")
       (:authors ("Protesilaos" . "info@protesilaos.com"))
-      (:commit . "7d53a6959c92b40e3f819b134f7db93ec9a31352"))])
+      (:commit . "75aa3fa79efd04ddf7980a1d3ec0cef6e4f4af90"))])
  (mpdired
   . [(4 -1 0 20250502 1) ((emacs (29)))
      "A dired-like client for Music Player Daemon" tar
@@ -3545,7 +3552,7 @@
       (:authors ("Oleh Krehel" . "ohwoeowho@gmail.com"))
       (:commit . "c107480fca7e42737c51b2afaa33ac31e92a7290"))])
  (tmr
-  . [(1 3 0 0 20260529 24) ((emacs (29 1)))
+  . [(1 3 0 0 20260730 43) ((emacs (29 1)))
      "Set timers using a convenient notation" tar
      ((:url . "https://github.com/protesilaos/tmr")
       (:keywords "convenience" "timer")
@@ -3554,7 +3561,7 @@
 		("Damien Cassou" . "damien@cassou.me")
 		("Daniel Mendler" . "mail@daniel-mendler.de")
 		("Steven Allen" . "steven@stebalien.com"))
-      (:commit . "ce6a462acd7459a732538192c71b5166ba0a8ee1"))])
+      (:commit . "cbef092bbb3ac40d62d7a7a00b002acefeacbf13"))])
  (tomelr
   . [(0 4 3 0 20220511 213722)
      ((emacs (26 3)) (map (3 2 1)) (seq (2 23)))
@@ -3581,14 +3588,14 @@
       (:url . "https://elpa.gnu.org/packages/track-changes.html")
       (:commit . "17ddfd66e65c19f44dee41ee1b7ee1ce23ef3ed2"))])
  (tramp
-  . [(2 8 2 0 20260720 2) ((emacs (28 1)))
+  . [(2 8 2 1 0 20260730 0) ((emacs (28 1)))
      "Transparent Remote Access, Multiple Protocol" tar
      ((:url . "https://www.gnu.org/software/tramp/")
       (:keywords "comm" "processes")
       (:maintainer "Michael Albinus" . "michael.albinus@gmx.de")
       (:authors ("Kai Großjohann" . "kai.grossjohann@gmx.net")
 		("Michael Albinus" . "michael.albinus@gmx.de"))
-      (:commit . "26b197ba691140466f15c7cd29cc7db77144444c"))])
+      (:commit . "56569d77e50d73b3db7b34e903adade9122660ce"))])
  (tramp-hlo
   . [(0 0 2 0 20251231 3054) ((tramp (2 8 0 5)))
      "High level operations as Tramp handlers" tar
@@ -3623,7 +3630,7 @@
       (:url . "https://elpa.gnu.org/packages/transcribe.html")
       (:commit . "2c2d493d5488f3b444d2a771ab443589fcc72c13"))])
  (transient
-  . [(0 13 5 0 20260725 5)
+  . [(0 13 5 0 20260730 7)
      ((emacs (28 1)) (compat (31 0)) (cond-let (1 1)) (llama (1 0))
       (seq (2 24)))
      "Transient commands" tar
@@ -3633,7 +3640,7 @@
 		   . "emacs.transient@jonas.bernoulli.dev")
       (:authors
        ("Jonas Bernoulli" . "emacs.transient@jonas.bernoulli.dev"))
-      (:commit . "91c25496972566d6b1b4411c1bb7a7e669355a4c"))])
+      (:commit . "0d6bbd3b111057b463f253c1be2a7978a4e37ef4"))])
  (transient-cycles
   . [(2 1 0 20260625 0) ((emacs (29 1)))
      "Define command variants with transient cycling" tar
