@@ -20,9 +20,7 @@ echo "$e[3]" |& grep "(" >& /dev/null; set s=$status;
 if ( $s == 0 ) source ./bin/twitchSpecialChars.csh $1; set s=$status; #echo $s; $<;
 #if ( $s == 2 | $s == 1 ) exit 0; #echo $e[2]; $<; # replaced by line below
 if ( $s == 2 | $s == 1 ) then;
-    (rm $1;&);&;
-    wait;
-    exit 0;
+    (rm $1;&);&; wait; exit 0;
 endif
 set e=(`echo -n $e[2] | & sed 1,2s/'[A]'/a/g | & sed 1,2s/'[B]'/b/g | & sed 1,2s/'[C]'/c/g | & sed 1,2s/'[D]'/d/g | & sed 1,2s/'[E]'/e/g | & sed 1,2s/'[F]'/f/g | & sed 1,2s/'[G]'/g/g | & sed 1,2s/'[H]'/h/g | & sed 1,2s/'[I]'/i/g | & sed 1,2s/'[J]'/j/g | & sed 1,2s/'[K]'/k/g | & sed 1,2s/'[L]'/l/g | & sed 1,2s/'[M]'/m/g | & sed 1,2s/'[N]'/n/g | & sed 1,2s/'[O]'/o/g | & sed 1,2s/'[P]'/p/g | & sed 1,2s/'[Q]'/q/g | & sed 1,2s/'[R]'/r/g | & sed 1,2s/'[S]'/s/g | & sed 1,2s/'[T]'/t/g | & sed 1,2s/'[U]'/u/g | & sed 1,2s/'[V]'/v/g | & sed 1,2s/'[W]'/w/g | & sed 1,2s/'[X]'/x/g | & sed 1,2s/'[Y]'/y/g | & sed 1,2s/'[Z]'/z/g`); #echo $e; $<;
 	(rm $1;&);&;
