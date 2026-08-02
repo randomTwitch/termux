@@ -26,22 +26,22 @@ set e=(`echo -n $e[2] | & sed 1,2s/'[A]'/a/g | & sed 1,2s/'[B]'/b/g | & sed 1,2s
 	(rm $1;&);&;
 	grep /$e/ $p1 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e found in 1stTwitchRed.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$e found in 1stTwitchRed.ascii";&);&; (play-audio $mgs_error;&)&; exit 0;
 	endif
 
 	grep /$e/ $p2 >& /dev/null;set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e found in 2ndTwitchViolet.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$e found in 2ndTwitchViolet.ascii";&);&; (play-audio $mgs_error;&)&; exit 0;
 	endif
 
 	grep /$e/ $p3 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e found in 3rdTwitchLblue.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$e found in 3rdTwitchLblue.ascii";&);&; (play-audio $mgs_error;&)&; exit 0;
 	endif
 
 	grep /$e/ $p4 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$e found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&; exit 0;
 	endif
 
 #echo $1; $<;

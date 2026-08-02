@@ -20,62 +20,62 @@ set ee=`echo $c | sed -e 1,2s/.home// | sed -e 1,2s/https...m.twitch.tv.// | sed
 if ( $e == $ee ) then;
 	grep /$e/ $p1 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e found in 1stTwitchRed.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$e found in 1stTwitchRed.ascii";&);&; (play-audio $mgs_error;&)&; exit 0;
 	endif
 
 	grep /$e/ $p2 >& /dev/null;set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e found in 2ndTwitchViolet.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$e found in 2ndTwitchViolet.ascii";&);&; (play-audio $mgs_error;&)&; exit 0;
 	endif
 
 	grep /$e/ $p3 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e found in 3rdTwitchLblue.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$e found in 3rdTwitchLblue.ascii";&);&; (play-audio $mgs_error;&)&; exit 0;
 	endif
 
 	grep /$e/ $p4 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$e found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&; exit 0;
 	endif
 else
 	grep /$e/ $p1 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e found in 1stTwitchRed.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$e found in 1stTwitchRed.ascii";&);&; (play-audio $mgs_error;&)&; exit 0;
 	endif
 
 	grep /$ee/ $p1 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$ee found in 1stTwitchRed.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$ee found in 1stTwitchRed.ascii";&);&; (play-audio $mgs_error;&)&; exit 0;
 	endif
 
 	grep /$e/ $p2 >& /dev/null;set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e found in 2ndTwitchViolet.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$e found in 2ndTwitchViolet.ascii";&);&; (play-audio $mgs_error;&)&; exit 0;
 	endif
 
 	grep /$ee/ $p2 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$ee found in 2ndTwitchViolet.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$ee found in 2ndTwitchViolet.ascii";&);&; (play-audio $mgs_error;&)&; exit 0;
 	endif
 
 	grep /$e/ $p3 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e found in 3rdTwitchLblue.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$e found in 3rdTwitchLblue.ascii";&);&; (play-audio $mgs_error;&)&; exit 0;
 	endif
 
 	grep /$ee/ $p3 >& /dev/null;  set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$ee found in 3rdTwitchLblue.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$ee found in 3rdTwitchLblue.ascii";&);&; (play-audio $mgs_error;&)&; exit 0;
 	endif
 
 	grep /$e/ $p4 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$e found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&; exit 0;
 	endif
 
 	grep /$ee/ $p4 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&; sleep 2s; exit 0;
+		(termux-toast "$e found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&; exit 0;
 	endif
 endif
 
