@@ -1,6 +1,7 @@
 #unsetenv *;
 set a = ( `grep -e "" /data/data/com.termux/files/usr/tmp/erl_tmp | sed 1,2s/'#'/'\n'/g` );
 if ( $#a == 0 ) exit 0;
+( echo -n $a > /data/data/com.termux/files/usr/tmp/erl_tmp2 ;&) ;& ;
 @ timer = 15;
 @ counter = $#a;
 foreach b ( $a )
