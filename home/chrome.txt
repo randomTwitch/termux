@@ -1,4 +1,5 @@
 ; -*- mode: lisp; eval: (auto-fill-mode 1); -*-
+https://m.twitch.tv/divvity/clip/SpotlessScrumptiousSproutMingLee-SupRv93jHh0mIV6T?desktop-redirect=true
 am start -n com.android.chrome/com.google.android.apps.chrome.Main -d bingo
 [alexanadupu@bmail.ag]
 want match curious educate junk current ring jazz fence squeeze
