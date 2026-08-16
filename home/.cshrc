@@ -1,5 +1,5 @@
 set prompt=]' ';
-set rprompt="]%~";
+set rprompt="/%~";
 set correct=complete;
 set autocorrect;
 set autolist;
