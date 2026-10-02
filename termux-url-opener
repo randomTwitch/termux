@@ -45,7 +45,7 @@ if ( $e == $ee ) then;
 		#(am start -n mark.via.gp/mark.via.Shell;&);&;
 		exit 0;
 	endif
-y
+
 	grep /$e/ $p4 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
 		(termux-toast "$e found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&;
@@ -112,7 +112,7 @@ else
 
 	grep /$ee/ $p4 >& /dev/null; set s=$status;
 	if ( $s == 0 ) then;
-		(termux-toast "$e found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&;
+		(termux-toast "$ee found in 4thTwitchWhite.ascii";&);&; (play-audio $mgs_error;&)&;
 		(am start -n com.android.chrome/com.google.android.apps.chrome.Main > /dev/null;&);&
 		#(am start -n mark.via.gp/mark.via.Shell;&);&;
 		exit 0;
